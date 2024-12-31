@@ -16,12 +16,12 @@
 
 @font-face {
   font-family:'cd-r';
-  src: url('../fonts/Syne-Regular.ttf');
+  src: url('./fonts/Syne-Regular.ttf');
 }
 body {
-  color: var(--foreground);
+
   background: var(--background);
-  font-family: 'cd-r'!important;
+  font-family: 'cd-r' !important;
   font-family: 16px;;
 }
 
@@ -52,12 +52,7 @@ body {
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family:'ff-r' !important;
-  font-weight: 100 !important;
-}
+
 
 @layer utilities {
   .text-balance {

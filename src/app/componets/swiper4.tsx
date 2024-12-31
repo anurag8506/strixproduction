@@ -47,8 +47,8 @@ const AutoSwiper = () => {
          height={10800}
          alt="Image"
        />
-              <p className="mx-2 text-[#fff] font-[cd-b] text-[25px] pt-4">{item.text}</p>
-       <p className="text-[22px] font-[cd-m] text-[#B8B8B8] mx-2 ">{item.subtext}</p>
+              <p className="mx-2 text-[#fff] font-[cd-m] text-[22px] pt-4">{item.text}</p>
+       <p className="text-[18px] font-[cd-r] text-[#B8B8B8] mx-2 ">{item.subtext}</p>
      </div>
      <div>
     

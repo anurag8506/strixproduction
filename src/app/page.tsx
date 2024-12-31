@@ -13,20 +13,20 @@ import "bootstrap/dist/css/bootstrap.min.css"
 export default function Home() {
     return (
         <>
-<Header/>
+            <Header />
 
             <section className="bg-[#000] overflow-hidden sm:px-20 px-6 sm:py-[100px] py-[30px] sm:pt-[160px] pt-[140px]">
                 <div className="container-fluid p-0">
                     <div className="row ">
-                        <div className="col-md-6 pb-4">
+                        <div className="col-md-5 pb-4">
                             <div >
-                                <p className="text-[#ffff] font-[600] sm:text-[75px] text-[35px] sm:leading-[80px] leading-[40px] font-[cd-b]">Pushing the boundaries of<p className="text-[#77FB38]">web technologies.</p> </p>
+                                <p className="text-[#ffff] font-[600] sm:text-[60px] text-[35px] sm:leading-[63px] leading-[40px] font-[cd-b]">Pushing the boundaries of<p className="text-[#77FB38]">web technologies.</p> </p>
 
                             </div>
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-md-4 mb-4">
+                        <div className="col-md-5 mb-4">
                             <p className="font-[cd-r]  sm:text-[28px] text-[25px]  text-[#fff]  sm:leading-[35px] leading-[28px]">We are a branding & digital studio based  in India – tackling complex visual and technological challenges for bold brands.</p>
                         </div>
                     </div>
@@ -105,39 +105,63 @@ export default function Home() {
                                 </p>
                             </div>
                         </div>
-                        <div className="row align-items-center sm:justify-center justify-center">
-                            <div className="col-md-10 sm:pt-[50px] pt-[30px]">
-                                <div className="col-md-8">
-                                    <p className="text-[#fff] p-0 m-0 align-items-center d-flex gap-2 sm:text-[50px] text-[25px] font-[cd-b]  sm:leading-[53px] ">MEDIA PRODUCTIVITY   <svg width="60" height="60" className="sm:w-[60px] w-[20px]" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.892377 0.980469H56V56.0881H53.476V5.28923L1.78475 56.9805L0 55.1957L51.6912 3.50448H0.892377V0.980469Z" fill="#77FB38" />
-                                    </svg></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row align-items-center  sm:justify-end justify-center">
-                            <div className="col-md-8 sm:pt-[100px] pt-[30px] ">
-                                <div className="col-md-8">
-                                    <div >
-                                        <p className="text-[#fff] p-0 m-0 align-items-center d-flex gap-2 sm:text-[50px] text-[25px] font-[cd-b]  sm:leading-[53px]"> CREATIVE DESIGN <svg width="60" height="60" className="sm:w-[60px] w-[20px]" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.892377 0.980469H56V56.0881H53.476V5.28923L1.78475 56.9805L0 55.1957L51.6912 3.50448H0.892377V0.980469Z" fill="#77FB38" />
-                                        </svg></p>
+                    
+                    </div>
+                    <div className="row align-items-center justify-center">
+                    <div className="col-md-10">
+                                <div className="row">
+                                        <div className="col-md-10 sm:pt-[50px] pt-[30px]">
+                                    <div className="flex">
+                                            <div className="col-md-8 mb-4">
+                                                <p className="text-[#fff] p-0 m-0 align-items-center d-flex gap-2 sm:text-[35px] text-[25px] font-[cd-m]  sm:leading-[38px] ">MEDIA PRODUCTIVITY   <svg width="25" height="25" className="sm:w-[60px] w-[20px]" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.892377 0.980469H56V56.0881H53.476V5.28923L1.78475 56.9805L0 55.1957L51.6912 3.50448H0.892377V0.980469Z" fill="#77FB38" />
+                                                </svg></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        <div className="col-md-10 mb-4 sm:pt-[50px] pt-[30px]">
+                                    <div className="row align-items-center sm:justify-end justify-center">
+                                            <div className="col-md-6 text-end">
+                                                <div className="d-flex justify-content-end">
+                                                <p
+                                                    className="text-[#fff] p-0 m-0 align-items-center d-flex gap-2 sm:text-[35px] text-[25px] font-[cd-m] sm:leading-[38px] justify-end"
+                                                >
+                                                    <span >CREATIVE DESIGN</span>
+                                                    <svg
+                                                        width="25"
+                                                        height="25"
+                                                        className="sm:w-[60px] w-[20px]"
+                                                        viewBox="0 0 56 57"
+                                                        fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                    >
+                                                        <path
+                                                            fill-rule="evenodd"
+                                                            clip-rule="evenodd"
+                                                            d="M0.892377 0.980469H56V56.0881H53.476V5.28923L1.78475 56.9805L0 55.1957L51.6912 3.50448H0.892377V0.980469Z"
+                                                            fill="#77FB38"
+                                                        />
+                                                    </svg>
+                                                </p>
 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="row align-items-center sm:justify-center justify-center">
+                                        <div className="col-md-10 sm:pt-[100px] pt-[30px]">
+                                            <div className="col-md-8">
+                                                <p className='text-[#fff] p-0 m-0 align-items-start d-flex gap-2 sm:text-[35px] text-[25px] font-[cd-m]  sm:leading-[40px]'> SOCIAL MEDIA MARKETING<br /> & MANAGEMENT  <svg width="25" height="25" className="sm:w-[60px] w-[20px]" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.892377 0.980469H56V56.0881H53.476V5.28923L1.78475 56.9805L0 55.1957L51.6912 3.50448H0.892377V0.980469Z" fill="#77FB38" />
+                                                </svg></p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="row align-items-center sm:justify-center justify-center">
-                            <div className="col-md-10 sm:pt-[100px] pt-[30px]">
-                                <div className="col-md-8">
-                                    <p className="text-[#fff] p-0 m-0 align-items-center d-flex gap-2 sm:text-[50px] text-[25px] font-[cd-b] sm:leading-[53px] "> SOCIAL MEDIA MARKETING & MANAGEMENT  <svg width="60" height="60" className="sm:w-[60px] w-[20px]" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.892377 0.980469H56V56.0881H53.476V5.28923L1.78475 56.9805L0 55.1957L51.6912 3.50448H0.892377V0.980469Z" fill="#77FB38" />
-                                    </svg></p>
-                                </div>
-                            </div>
-                        </div>
 
-
-                    </div>
+                        </div>
 
 
                 </div>
@@ -157,34 +181,34 @@ export default function Home() {
                                 </p>
                             </div>
                         </div>
-                        <div className="row sm:pt-[100px] pt-[50px] ">
+                        <div className="row sm:pt-[50px] pt-[50px] ">
                             <div className="col-md-12 ">
                                 <div className="border border-[1px] border-[#5B5B5B] border-t w-full"></div>
-                                <p className="text-[#5B5B5B]  text-[25px] font-[cd-se] sm:pt-[50px] pt-[30px] sm:pb-[40px] pb-[20px] text-center">EZEV</p>
+                                <p className="text-[#5B5B5B]  text-[25px] font-[cd-m] pt-[30px]  pb-[10px] text-center">EZEV</p>
                             </div>
                             <div className="col-md-12 ">
                                 <div className="border border-[1px] border-[#5B5B5B] border-t w-full"></div>
-                                <p className="text-[#5B5B5B]  text-[25px] font-[cd-se] sm:pt-[50px] pt-[30px] sm:pb-[40px] pb-[20px] text-center">TYRA VENTURES</p>
+                                <p className="text-[#5B5B5B]  text-[25px] font-[cd-m] pt-[30px]  pb-[10px] text-center">TYRA VENTURES</p>
                             </div>
                             <div className="col-md-12 ">
                                 <div className="border border-[1px] border-[#5B5B5B] border-t w-full"></div>
-                                <p className="text-[#5B5B5B]  text-[25px] font-[cd-se] sm:pt-[50px] pt-[30px] sm:pb-[40px] pb-[20px] text-center">CLOUD ESSENTIALS</p>
+                                <p className="text-[#5B5B5B]  text-[25px] font-[cd-m] pt-[30px]  pb-[10px] text-center">CLOUD ESSENTIALS</p>
                             </div>
                             <div className="col-md-12 ">
                                 <div className="border border-[1px] border-[#5B5B5B] border-t w-full"></div>
-                                <p className="text-[#5B5B5B]  text-[25px] font-[cd-se] sm:pt-[50px] pt-[30px] sm:pb-[40px] pb-[20px] text-center">CLOUD BUSINESS SETUP SERVICES</p>
+                                <p className="text-[#5B5B5B]  text-[25px] font-[cd-m] pt-[30px]  pb-[10px] text-center">CLOUD BUSINESS SETUP SERVICES</p>
                             </div>
                             <div className="col-md-12 ">
                                 <div className="border border-[1px] border-[#5B5B5B] border-t w-full"></div>
-                                <p className="text-[#5B5B5B]  text-[25px] font-[cd-se] sm:pt-[50px] pt-[30px] sm:pb-[40px] pb-[20px] text-center">CLOUD ACCOUNTING INCORPORATION</p>
+                                <p className="text-[#5B5B5B]  text-[25px] font-[cd-m] pt-[30px]  pb-[10px] text-center">CLOUD ACCOUNTING INCORPORATION</p>
                             </div>
                             <div className="col-md-12 ">
                                 <div className="border border-[1px] border-[#5B5B5B] border-t w-full"></div>
-                                <p className="text-[#5B5B5B]  text-[25px] font-[cd-se] sm:pt-[50px] pt-[30px] sm:pb-[40px] pb-[20px] text-center">SCRIPT STUDIO</p>
+                                <p className="text-[#5B5B5B]  text-[25px] font-[cd-m] pt-[30px]  pb-[10px] text-center">SCRIPT STUDIO</p>
                             </div>
                             <div className="col-md-12 ">
                                 <div className="border border-[1px] border-[#5B5B5B] border-t w-full"></div>
-                                <p className="text-[#5B5B5B]  text-[25px] font-[cd-se] sm:pt-[50px] pt-[30px] sm:pb-[40px] pb-[20px] text-center">BODY RESET</p>
+                                <p className="text-[#5B5B5B]  text-[25px] font-[cd-m] pt-[30px]  pb-[10px] text-center">BODY RESET</p>
                             </div>
                         </div>
 
@@ -195,7 +219,7 @@ export default function Home() {
 
                 </div>
             </section>
-            <section className="bg-[#000] overflow-hidden sm:px-20 px-6 sm:py-[100px] py-[30px]">
+            <section className="bg-[#000] overflow-hidden sm:px-20 px-6 sm:py-[50px] py-[30px]">
                 <div className="container-fluid p-0">
 
                     <div className="row align-items-center justify-center">
@@ -268,13 +292,13 @@ export default function Home() {
 
                 </div>
             </section>
-            <section className="bg-[#000] overflow-hidden sm:px-20 px-6 sm:py-[50px] py-[30px]  ">
+            <section className="bg-[#000] overflow-hidden sm:px-20 px-6 sm:py-[30px] py-[30px]  ">
                 <div className="container-fluid p-0">
 
                     <div className="row align-items-center justify-center">
                         <div className="col-md-10">
-                            <div className="d-flex justify-between align-items-center">
-                                <p className="text-[#77FB38]  sm:text-[55px] text-[25px] sm:leading-[60px] leading-[28px] p-0 m-0 font-[cd-b]">AWARD WINNING STRIX PRODUCTION <span className="text-[#fff] "><br />WITH MORE THAN 150 AWARDS</span></p>
+                            <div className="d-flex justify-center align-items-center">
+                                <p className="text-[#77FB38]  sm:text-[45px] text-[25px] sm:leading-[53px] leading-[28px] p-0 m-0 font-[cd-b]">AWARD WINNING STRIX PRODUCTION <span className="text-[#fff] "><br />WITH MORE THAN 150 AWARDS</span></p>
 
                             </div>
                         </div>
@@ -336,13 +360,13 @@ export default function Home() {
                         </div>
                         <div className="col-md-6 mb-4">
 
-                          
+
                             <form className="space-y-6">
 
                                 <div className="relative">
                                     <div className="row align-items-center">
                                         <div className="col-md-6 mb-4">
-                                        <p className="font-[cd-r] text-[16px] text-[#000] m-0 p-0 ">DROP A LINE </p>
+                                            <p className="font-[cd-r] text-[16px] text-[#000] m-0 p-0 ">DROP A LINE </p>
                                             <label className="block text-sm font-[cd-m] text-black mb-3  pt-4">
                                                 NAME *
                                             </label>
@@ -354,12 +378,12 @@ export default function Home() {
                                             />
                                         </div>
                                         <div className="col-md-6 mb-4">
-                                        <p className="font-[cd-r] text-[16px] text-[#000] d-flex align-center gap-2 m-0 p-0 ">COPY EMAIL
-                                    <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M17.3 0H5.30005C5.10114 0 4.91037 0.0790201 4.76972 0.21967C4.62907 0.36032 4.55005 0.55109 4.55005 0.75V4.5H0.800049C0.601139 4.5 0.410369 4.57902 0.269719 4.71967C0.129069 4.86032 0.0500488 5.05109 0.0500488 5.25V17.25C0.0500488 17.4489 0.129069 17.6397 0.269719 17.7803C0.410369 17.921 0.601139 18 0.800049 18H12.8C12.9989 18 13.1897 17.921 13.3303 17.7803C13.471 17.6397 13.55 17.4489 13.55 17.25V13.5H17.3C17.4989 13.5 17.6897 13.421 17.8303 13.2803C17.971 13.1397 18.05 12.9489 18.05 12.75V0.75C18.05 0.55109 17.971 0.36032 17.8303 0.21967C17.6897 0.0790201 17.4989 0 17.3 0ZM12.05 16.5H1.55005V6H12.05V16.5ZM16.55 12H13.55V5.25C13.55 5.05109 13.471 4.86032 13.3303 4.71967C13.1897 4.57902 12.9989 4.5 12.8 4.5H6.05005V1.5H16.55V12Z" fill="black" />
-                                    </svg>
+                                            <p className="font-[cd-r] text-[16px] text-[#000] d-flex align-center gap-2 m-0 p-0 ">COPY EMAIL
+                                                <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M17.3 0H5.30005C5.10114 0 4.91037 0.0790201 4.76972 0.21967C4.62907 0.36032 4.55005 0.55109 4.55005 0.75V4.5H0.800049C0.601139 4.5 0.410369 4.57902 0.269719 4.71967C0.129069 4.86032 0.0500488 5.05109 0.0500488 5.25V17.25C0.0500488 17.4489 0.129069 17.6397 0.269719 17.7803C0.410369 17.921 0.601139 18 0.800049 18H12.8C12.9989 18 13.1897 17.921 13.3303 17.7803C13.471 17.6397 13.55 17.4489 13.55 17.25V13.5H17.3C17.4989 13.5 17.6897 13.421 17.8303 13.2803C17.971 13.1397 18.05 12.9489 18.05 12.75V0.75C18.05 0.55109 17.971 0.36032 17.8303 0.21967C17.6897 0.0790201 17.4989 0 17.3 0ZM12.05 16.5H1.55005V6H12.05V16.5ZM16.55 12H13.55V5.25C13.55 5.05109 13.471 4.86032 13.3303 4.71967C13.1897 4.57902 12.9989 4.5 12.8 4.5H6.05005V1.5H16.55V12Z" fill="black" />
+                                                </svg>
 
-                                </p>
+                                            </p>
                                             <label className="block text-sm font-[cd-m] text-black mb-3 pt-4 ">
                                                 EMAIL *
                                             </label>
