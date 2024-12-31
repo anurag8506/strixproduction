@@ -1,101 +1,412 @@
+
 import Image from "next/image";
 
-export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+import Swiper1 from "./componets/swiper1";
+import Swiper2 from "./componets/swiper2";
+import Swiper3 from "./componets/swiper3";
+import Swiper4 from "./componets/swiper4";
+import Footer from './componets/footer'
+import Header from "./componets/header";
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+
+import "bootstrap/dist/css/bootstrap.min.css"
+export default function Home() {
+    return (
+        <>
+<Header/>
+
+            <section className="bg-[#000] overflow-hidden sm:px-20 px-6 sm:py-[100px] py-[30px] sm:pt-[160px] pt-[140px]">
+                <div className="container-fluid p-0">
+                    <div className="row ">
+                        <div className="col-md-6 pb-4">
+                            <div >
+                                <p className="text-[#ffff] font-[600] sm:text-[75px] text-[35px] sm:leading-[80px] leading-[40px] font-[cd-b]">Pushing the boundaries of<p className="text-[#77FB38]">web technologies.</p> </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-md-4 mb-4">
+                            <p className="font-[cd-r]  sm:text-[28px] text-[25px]  text-[#fff]  sm:leading-[35px] leading-[28px]">We are a branding & digital studio based  in India – tackling complex visual and technological challenges for bold brands.</p>
+                        </div>
+                    </div>
+                    <div className="row justify-center sm:pt-[150] pt-[30px]">
+                        <div className="col-md-8 b-4">
+                            <Image
+                                src="/assets/image 1.png"
+                                className="w-full rounded-[30%]"
+                                width={1080}
+                                height={1080}
+                                alt="no-img"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="flex items-center justify-center bg-gradient-to-b from-[#77FB38] to-[#CBCBCB] overflow-hidden sm:px-20 px-6 sm:py-[100px] py-[30px]">
+                <div className="container-fluid p-0">
+
+                    <div className="row align-items-center justify-center">
+                        <div className="col-md-10">
+                            <div className="row align-items-center">
+                                <div className="col-md-6 mb-4">
+                                    <div className="col-md-8">
+                                        <Image
+                                            src="/assets/image 2.png"
+                                            alt="Person 1"
+
+                                            width='5550'
+                                            height='550'
+                                            className="w-full"
+
+                                        />
+
+                                    </div>
+                                </div>
+                                <div className="col-md-6 mb-4">
+                                    <p className="sm:text-[20px] text-[18px] font-[cd-r] text-[#000] pt-3">Welcome to STRIX PRODUCTION, born in iNDIA.</p>
+                                    <p className="sm:text-[20px] text-[18px] font-[cd-r] text-[#000] pt-3">We are a unity of professionals who believe in the revolutionary and transformative power of design. Our mission is to create innovative and effective design solutions that meet our clients’ business needs and help them succeed.
+                                    </p>
+                                    <p className="sm:text-[20px] text-[18px] font-[cd-r] text-[#000] pt-3">We’ve completed over 150 successful projects, helping businesses worldwide enhance their digital presence Our expertise spans UX/UI design, web & mobile application design, and brand identity creation.
+                                    </p>
+                                    <p className="sm:text-[20px] text-[18px] font-[cd-r] text-[#000] pt-3">STRIX PRODUCTION is your guide on a journey to the horizon of changes where design unlocks endless possibilities and partnership drives the results. Get world-class design your business.
+
+                                    </p>
+                                    <p className="sm:text-[20px] text-[18px] font-[cd-r] text-[#000] pt-3">Let’s  collaborate</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </section>
+
+            <section className="bg-[#000] overflow-hidden sm:px-20 px-6 sm:py-[100px] py-[30px]">
+                <div className="container-fluid p-0">
+                    <Swiper1 />
+
+                </div>
+            </section>
+
+            <section className="bg-[#000] overflow-hidden sm:px-20 px-6 sm:py-[100px] py-[30px]">
+                <div className="container-fluid p-0">
+
+                    <div className="row align-items-center justify-center">
+                        <div className="col-md-12">
+                            <div className="d-flex justify-between align-items-center">
+                                <p className="text-[#fff]  text-[16px] p-0 m-0">SERVICES</p>
+                                <p className="text-[#77FB38] p-0 m-0 align-items-center d-flex gap-2 text-[16px] ">MORE SERVICES
+                                    <svg width="16" height="16" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.892377 0.980469H56V56.0881H53.476V5.28923L1.78475 56.9805L0 55.1957L51.6912 3.50448H0.892377V0.980469Z" fill="#77FB38" />
+                                    </svg>
+                                </p>
+                            </div>
+                        </div>
+                        <div className="row align-items-center sm:justify-center justify-center">
+                            <div className="col-md-10 sm:pt-[50px] pt-[30px]">
+                                <div className="col-md-8">
+                                    <p className="text-[#fff] p-0 m-0 align-items-center d-flex gap-2 sm:text-[50px] text-[25px] font-[cd-b]  sm:leading-[53px] ">MEDIA PRODUCTIVITY   <svg width="60" height="60" className="sm:w-[60px] w-[20px]" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.892377 0.980469H56V56.0881H53.476V5.28923L1.78475 56.9805L0 55.1957L51.6912 3.50448H0.892377V0.980469Z" fill="#77FB38" />
+                                    </svg></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="row align-items-center  sm:justify-end justify-center">
+                            <div className="col-md-8 sm:pt-[100px] pt-[30px] ">
+                                <div className="col-md-8">
+                                    <div >
+                                        <p className="text-[#fff] p-0 m-0 align-items-center d-flex gap-2 sm:text-[50px] text-[25px] font-[cd-b]  sm:leading-[53px]"> CREATIVE DESIGN <svg width="60" height="60" className="sm:w-[60px] w-[20px]" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.892377 0.980469H56V56.0881H53.476V5.28923L1.78475 56.9805L0 55.1957L51.6912 3.50448H0.892377V0.980469Z" fill="#77FB38" />
+                                        </svg></p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="row align-items-center sm:justify-center justify-center">
+                            <div className="col-md-10 sm:pt-[100px] pt-[30px]">
+                                <div className="col-md-8">
+                                    <p className="text-[#fff] p-0 m-0 align-items-center d-flex gap-2 sm:text-[50px] text-[25px] font-[cd-b] sm:leading-[53px] "> SOCIAL MEDIA MARKETING & MANAGEMENT  <svg width="60" height="60" className="sm:w-[60px] w-[20px]" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.892377 0.980469H56V56.0881H53.476V5.28923L1.78475 56.9805L0 55.1957L51.6912 3.50448H0.892377V0.980469Z" fill="#77FB38" />
+                                    </svg></p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </section>
+
+            <section className="bg-[#000] overflow-hidden sm:px-20 px-6 sm:py-[100px] py-[30px]">
+                <div className="container-fluid p-0">
+
+                    <div className="row align-items-center justify-center">
+                        <div className="col-md-12">
+                            <div className="d-flex justify-between align-items-center">
+                                <p className="text-[#fff]  text-[16px] p-0 m-0">RECENT WORKS</p>
+                                <p className="text-[#77FB38] p-0 m-0 align-items-center d-flex gap-2 text-[16px] ">MORE PROJECT
+                                    <svg width="16" height="16" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.892377 0.980469H56V56.0881H53.476V5.28923L1.78475 56.9805L0 55.1957L51.6912 3.50448H0.892377V0.980469Z" fill="#77FB38" />
+                                    </svg>
+                                </p>
+                            </div>
+                        </div>
+                        <div className="row sm:pt-[100px] pt-[50px] ">
+                            <div className="col-md-12 ">
+                                <div className="border border-[1px] border-[#5B5B5B] border-t w-full"></div>
+                                <p className="text-[#5B5B5B]  text-[25px] font-[cd-se] sm:pt-[50px] pt-[30px] sm:pb-[40px] pb-[20px] text-center">EZEV</p>
+                            </div>
+                            <div className="col-md-12 ">
+                                <div className="border border-[1px] border-[#5B5B5B] border-t w-full"></div>
+                                <p className="text-[#5B5B5B]  text-[25px] font-[cd-se] sm:pt-[50px] pt-[30px] sm:pb-[40px] pb-[20px] text-center">TYRA VENTURES</p>
+                            </div>
+                            <div className="col-md-12 ">
+                                <div className="border border-[1px] border-[#5B5B5B] border-t w-full"></div>
+                                <p className="text-[#5B5B5B]  text-[25px] font-[cd-se] sm:pt-[50px] pt-[30px] sm:pb-[40px] pb-[20px] text-center">CLOUD ESSENTIALS</p>
+                            </div>
+                            <div className="col-md-12 ">
+                                <div className="border border-[1px] border-[#5B5B5B] border-t w-full"></div>
+                                <p className="text-[#5B5B5B]  text-[25px] font-[cd-se] sm:pt-[50px] pt-[30px] sm:pb-[40px] pb-[20px] text-center">CLOUD BUSINESS SETUP SERVICES</p>
+                            </div>
+                            <div className="col-md-12 ">
+                                <div className="border border-[1px] border-[#5B5B5B] border-t w-full"></div>
+                                <p className="text-[#5B5B5B]  text-[25px] font-[cd-se] sm:pt-[50px] pt-[30px] sm:pb-[40px] pb-[20px] text-center">CLOUD ACCOUNTING INCORPORATION</p>
+                            </div>
+                            <div className="col-md-12 ">
+                                <div className="border border-[1px] border-[#5B5B5B] border-t w-full"></div>
+                                <p className="text-[#5B5B5B]  text-[25px] font-[cd-se] sm:pt-[50px] pt-[30px] sm:pb-[40px] pb-[20px] text-center">SCRIPT STUDIO</p>
+                            </div>
+                            <div className="col-md-12 ">
+                                <div className="border border-[1px] border-[#5B5B5B] border-t w-full"></div>
+                                <p className="text-[#5B5B5B]  text-[25px] font-[cd-se] sm:pt-[50px] pt-[30px] sm:pb-[40px] pb-[20px] text-center">BODY RESET</p>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+            </section>
+            <section className="bg-[#000] overflow-hidden sm:px-20 px-6 sm:py-[100px] py-[30px]">
+                <div className="container-fluid p-0">
+
+                    <div className="row align-items-center justify-center">
+                        <div className="col-md-12">
+                            <div className="d-flex justify-between align-items-center">
+                                <p className="text-[#fff]  text-[16px] p-0 m-0 font-[cd-r]">WHY WORK WITH US</p>
+
+                            </div>
+                        </div>
+                        <div className="row sm:pt-[100px] pt-[50px] sm:justify-end justify-center ">
+                            <div className="col-md-8 ">
+                                <div className="row">
+                                    <div className="col-md-6 mb-4">
+                                        <p className="text-[16px] text-[#fff] font-[cd-r]">/ 001</p>
+                                        <p className="text-[#ffff]  text-[25px] font-[cd-se]  pt-[10px] "><span className="text-[#77FB38]">BUSINESS-FOCUSED DESIGN </span> FOR A COMPETITIVE ADVANTAGE
+                                        </p>
+                                    </div>
+                                    <div className="col-md-6 mb-4">
+                                        <p className="text-[16px] text-[#fff] font-[cd-r]">/ 002</p>
+
+                                        <p className="text-[#ffff]  text-[25px] font-[cd-se]  pt-[10px] "> STRATEGIES COMBINING  <span className="text-[#77FB38]">  DESIGN , MARKETING AND CONSULTING  </span>
+                                        </p>
+                                    </div>
+                                    {/*  */}
+                                    <div className="col-md-6 mb-4">
+                                        <p className="text-[16px] text-[#fff] font-[cd-r]">/ 003</p>
+                                        <p className="text-[#ffff]  text-[25px] font-[cd-se]  pt-[10px] "><span className="text-[#77FB38]">
+                                            DATA-DRIVEN INSIGHTS </span> THAT SHAPE SMART DECISIONS
+                                        </p>
+                                    </div>
+                                    <div className="col-md-6 mb-4">
+                                        <p className="text-[16px] text-[#fff] font-[cd-r]">/ 004</p>
+
+                                        <p className="text-[#ffff]  text-[25px] font-[cd-se]  pt-[10px] ">  <span className="text-[#77FB38]">
+                                            VERSATILE INDUSTRY EXPERIENCE   </span>TO MEET YOUR GOALS
+                                        </p>
+                                    </div>
+                                    {/*  */}
+                                    <div className="col-md-6 mb-4">
+                                        <p className="text-[16px] text-[#fff] font-[cd-r]">/ 005</p>
+                                        <p className="text-[#ffff]  text-[25px] font-[cd-se]  pt-[10px] ">  <span className="text-[#77FB38]">
+
+                                            FULL TRANSPARENCY   </span>ACROSS EVERY STAGE OF THE PROCES
+                                        </p>
+                                    </div>
+                                    <div className="col-md-6 mb-4">
+                                        <p className="text-[16px] text-[#fff] font-[cd-r]">/ 006</p>
+
+                                        <p className="text-[#ffff]  text-[25px] font-[cd-se]  pt-[10px] "><span className="text-[#77FB38]">
+                                            A TEAM OF PROFESSIONALS </span>
+                                            DEDICATED TO QUALITY AND RESULTS
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+            </section>
+            <section className="bg-[#000] overflow-hidden sm:px-20 px-6 sm:py-[100px] py-[30px]">
+                <div className="container-fluid p-0">
+                    <Swiper2 />
+
+                </div>
+            </section>
+            <section className="bg-[#000] overflow-hidden sm:px-20 px-6 sm:py-[50px] py-[30px]  ">
+                <div className="container-fluid p-0">
+
+                    <div className="row align-items-center justify-center">
+                        <div className="col-md-10">
+                            <div className="d-flex justify-between align-items-center">
+                                <p className="text-[#77FB38]  sm:text-[55px] text-[30px] sm:leading-[60px] leading-[33px] p-0 m-0 font-[cd-b]">AWARD WINNING STRIX PRODUCTION <span className="text-[#fff] "><br />WITH MORE THAN 150 AWARDS</span></p>
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+
+                </div>
+            </section>
+            <section className="bg-[#000] overflow-hidden sm:px-20 px-6 sm:py-[100px] py-[30px]">
+                <div className="container-fluid p-0">
+                    <Swiper3 />
+
+                </div>
+            </section>
+            <section className="bg-[#000] overflow-hidden sm:px-20 px-6 sm:py-[100px] py-[30px] sm:pt-[50px] pt-[20px]">
+                <div className="container-fluid p-0">
+
+                    <div className="row">
+                        <div className="col-md-12 sm:pt-[20px] pt-[40px]">
+                            <div className="border border-[1px] border-[#5B5B5B] border-t w-full"></div>
+                            <div className="col-md-6">
+                                <p className="font-[cd-se] sm:text-[30px] text-[25px] text-[#fff] pt-5 ">MEET OUR TEAM</p>
+                                <p className="font-[cd-r] text-[18px] text-[#fff] ">At Strix Production, we believe that a successful marketing campaign requires the collaborative efforts of talented individuals with diverse skills and expertise. Our dedicated team of professionals is here to help your business thrive in the ever-changing landscape of digital marketing</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+            <section className="bg-[#000] overflow-hidden sm:px-20 px-6 sm:py-[100px] py-[30px] sm:pt-[50px] pt-[20px]">
+                <div className="container-fluid p-0">
+
+                    <div className="row">
+                        <div className="col-md-12">
+
+                            <Swiper4 />
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section className="flex items-center justify-center bg-gradient-to-b from-[#CBCBCB] to-[#77FB38] overflow-hidden sm:px-20 px-6 sm:py-[100px] py-[30px] sm:pt-[50px] pt-[20px]">
+                <div className="container-fluid p-0">
+
+                    <div className="row align-items-end sm:pt-[40px] sm:pb-[40px]">
+                        <div className="col-md-6 mb-4">
+                            <div className="col-md-9">
+                                <p className="sm:text-[55px] text-[30px] sm:leading-[60px] leading-[33px] font-[cd-se] text-[#000] font-[cd-b] p-0 m-0 ">Get your project
+                                    estimate for free</p>
+
+                            </div>
+                        </div>
+                        <div className="col-md-6 mb-4">
+
+                          
+                            <form className="space-y-6">
+
+                                <div className="relative">
+                                    <div className="row align-items-center">
+                                        <div className="col-md-6 mb-4">
+                                        <p className="font-[cd-r] text-[16px] text-[#000] m-0 p-0 ">DROP A LINE </p>
+                                            <label className="block text-sm font-[cd-m] text-black mb-3  pt-4">
+                                                NAME *
+                                            </label>
+                                            <input
+                                                type="text"
+                                                placeholder="Your name"
+                                                className="w-full bg-transparent border-b-2 border-black text-black placeholder-gray-500 focus:outline-none focus:ring-0 focus:border-green-500 font-[cd-r]"
+                                                required
+                                            />
+                                        </div>
+                                        <div className="col-md-6 mb-4">
+                                        <p className="font-[cd-r] text-[16px] text-[#000] d-flex align-center gap-2 m-0 p-0 ">COPY EMAIL
+                                    <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.3 0H5.30005C5.10114 0 4.91037 0.0790201 4.76972 0.21967C4.62907 0.36032 4.55005 0.55109 4.55005 0.75V4.5H0.800049C0.601139 4.5 0.410369 4.57902 0.269719 4.71967C0.129069 4.86032 0.0500488 5.05109 0.0500488 5.25V17.25C0.0500488 17.4489 0.129069 17.6397 0.269719 17.7803C0.410369 17.921 0.601139 18 0.800049 18H12.8C12.9989 18 13.1897 17.921 13.3303 17.7803C13.471 17.6397 13.55 17.4489 13.55 17.25V13.5H17.3C17.4989 13.5 17.6897 13.421 17.8303 13.2803C17.971 13.1397 18.05 12.9489 18.05 12.75V0.75C18.05 0.55109 17.971 0.36032 17.8303 0.21967C17.6897 0.0790201 17.4989 0 17.3 0ZM12.05 16.5H1.55005V6H12.05V16.5ZM16.55 12H13.55V5.25C13.55 5.05109 13.471 4.86032 13.3303 4.71967C13.1897 4.57902 12.9989 4.5 12.8 4.5H6.05005V1.5H16.55V12Z" fill="black" />
+                                    </svg>
+
+                                </p>
+                                            <label className="block text-sm font-[cd-m] text-black mb-3 pt-4 ">
+                                                EMAIL *
+                                            </label>
+                                            <input
+                                                type="email"
+                                                placeholder="Your email"
+                                                className="w-full bg-transparent border-b-2 border-black text-black placeholder-gray-500 focus:outline-none focus:ring-0 focus:border-green-500 font-[cd-r] "
+                                                required
+                                            />
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div className="relative">
+                                    <label className="block text-sm font-[cd-m] text-black mb-3 ">
+                                        MESSAGE
+                                    </label>
+                                    <textarea
+                                        placeholder="Your message"
+                                        className="w-full bg-transparent  text-black placeholder-gray-500 focus:outline-none focus:ring-0 focus:border-green-500 font-[cd-r]"
+                                        rows={4}
+                                    ></textarea>
+
+                                </div>
+
+                                <button
+                                    type="submit"
+                                    className="w-full bg-black text-white py-3 rounded-lg font-semibold hover:bg-gray-800 transition font-[cd-m]"
+                                >
+                                    HIT US UP
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <Footer />
+
+
+
+
+
+
+        </>
+    );
 }
