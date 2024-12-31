@@ -73,7 +73,7 @@ const Header = () => {
 
                       <div className="sm:absolute relative left-[-2] sm:top-[30px] top-[0px] sm:p-[10px] p-[0px] sm:mt-2 w-[280px] bg-black sm:shadow-md rounded-md transition-all ease-in-out group-hover:!opacity-100 opacity-0 invisible group-hover:!visible h-[0px] sm:h-[auto] group-hover:h-[auto]">
                         <ul className="pl-5 py-0 space-y-2 sm:mt-4 mb-0">
-                          <Link href="/" className="text-white text-[18px] no-underline block sm:py-[0px] pt-[10px]">
+                          <Link href="/about" className="text-white text-[18px] no-underline block sm:py-[0px] pt-[10px]">
                             <li className="mb-3 leading-[18px] text-[16px] font-[cd-r] font-[500] text-[#fff] hover:text-[#0073fd]">
                               ABOUT
                             </li>

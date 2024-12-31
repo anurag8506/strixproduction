@@ -1,9 +1,7 @@
 
 import Image from "next/image";
 
-import Swiper1 from "../componets/swiper1";
-import Swiper2 from "../componets/swiper2";
-import Swiper3 from "../componets/swiper3";
+
 import Swiper4 from "../componets/swiper4";
 import Footer from '../componets/footer'
 import Header from "../componets/header";
@@ -27,7 +25,7 @@ export default function Home() {
                     </div>
                     <div className="row">
                         <div className="col-md-6 mb-4">
-                            <p className="font-[cd-r]  sm:text-[25px] text-[25px]  text-[#FEFEFE]  sm:leading-[28px] leading-[28px]">Welcome to Strix Productions – where creativity meets strategy to deliver outstanding digital solutions. Founded in May 2024, we began as a passionate freelance venture and quickly transformed into a thriving agency. Our commitment to excellence, innovation, and client satisfaction has allowed us to make a significant impact in the digital creative space.</p>
+                            <p className="font-[cd-r]  sm:text-[25px] text-[20px]  text-[#FEFEFE]  sm:leading-[30px] leading-[25px]">Welcome to Strix Productions – where creativity meets strategy to deliver outstanding digital solutions. Founded in May 2024, we began as a passionate freelance venture and quickly transformed into a thriving agency. Our commitment to excellence, innovation, and client satisfaction has allowed us to make a significant impact in the digital creative space.</p>
                         </div>
                     </div>
                     <div className="row justify-center sm:pt-[150] pt-[30px]">
@@ -63,42 +61,45 @@ export default function Home() {
                     <div className="row align-items-center justify-center">
                         <div className="col-md-10">
                             <div className="row align-items-center">
-                              
-                                <div className="col-md-6 mb-4">
-                                    <p className="sm:text-[20px] text-[18px] font-[cd-m] text-[#fff] pt-3">Our Achievements</p>
-                                    <p className="sm:text-[16px] text-[16px] font-[cd-r] text-[#fff] ">In just 8 months of 2024, we: </p>
-                                    <div className="text-[#fff] font-[cd-r] sm:text-[20px] text-[16px]">
-                                        <ul className="list-disc m-0 p-0 ">
-                                            <li className="mb-2 text-[16px]">
-                                                Generated over <span className="text-[#77FB38] ">$10,000</span> in revenue, a milestone that reflects our dedication and the trust of our clients.
-                                            </li>
-                                            <li className="mb-2 text-[16px]">
-                                                Served <span className="text-[#77FB38]">40+</span> clients from various industries, tailoring our services to meet their unique needs.
-                                            </li>
-                                            <li className="mb-2 text-[16px]">
-                                                Edited <span className="text-[#77FB38]">50+</span> professional videos, ensuring high-quality storytelling and impactful visuals.
-                                            </li>
-                                            <li className="mb-2 text-[16px]">
-                                                Designed countless graphics, crafted standout brand identities, and managed dynamic social media campaigns.
-                                            </li>
-                                        </ul>
+
+                                <div className="col-md-6 mb-4 order-md-1 order-2">
+                                    <div className="col-md-10">
+                                        <p className="sm:text-[25px] text-[18px] font-[cd-m] text-[#fff] pt-3">Our Achievements</p>
+                                        <p className="sm:text-[16px] text-[16px] font-[cd-r] text-[#fff] ">In just 8 months of 2024, we: </p>
+                                        <div className="text-[#fff] font-[cd-r] sm:text-[20px] text-[16px]">
+                                            <ul className="list-disc m-0 p-0 ">
+                                                <li className="mb-2 text-[16px]">
+                                                    Generated over <span className="text-[#77FB38] ">$10,000</span> in revenue, a milestone that reflects our dedication and the trust of our clients.
+                                                </li>
+                                                <li className="mb-2 text-[16px]">
+                                                    Served <span className="text-[#77FB38]">40+</span> clients from various industries, tailoring our services to meet their unique needs.
+                                                </li>
+                                                <li className="mb-2 text-[16px]">
+                                                    Edited <span className="text-[#77FB38]">50+</span> professional videos, ensuring high-quality storytelling and impactful visuals.
+                                                </li>
+                                                <li className="mb-2 text-[16px]">
+                                                    Designed countless graphics, crafted standout brand identities, and managed dynamic social media campaigns.
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <p className="sm:text-[20px] text-[18px] font-[cd-r] text-[#fff] pt-3">These achievements are a testament to our commitment to delivering value and results for our clients. </p>
+
                                     </div>
 
-                                    <p className="sm:text-[20px] text-[18px] font-[cd-r] text-[#fff] pt-3">These achievements are a testament to our commitment to delivering value and results for our clients. </p>
-
                                 </div>
-                                <div className="col-md-6 mb-4">
-                                        <div className="d-flex justify-end">
-                                    <div className="col-md-8">
-                                        <Image
-                                            src="/assets/image 4.png"
-                                            alt="Person 1"
+                                <div className="col-md-6 mb-4 order-md-2 order-1">
+                                    <div className="d-flex justify-end">
+                                        <div className="col-md-10 ">
+                                            <Image
+                                                src="/assets/image 4.png"
+                                                alt="Person 1"
 
-                                            width='5550'
-                                            height='550'
-                                            className="w-full"
+                                                width='5550'
+                                                height='550'
+                                                className="w-full"
 
-                                        />
+                                            />
 
                                         </div>
 
@@ -114,239 +115,163 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="bg-[#000] overflow-hidden sm:px-20 px-6 sm:py-[100px] py-[30px]">
-                <div className="container-fluid p-0">
-                    <Swiper1 />
-
-                </div>
-            </section>
-
-            <section className="bg-[#000] overflow-hidden sm:px-20 px-6 sm:py-[100px] py-[30px]">
-                <div className="container-fluid p-0">
-
-                    <div className="row align-items-center justify-center">
-                        <div className="col-md-12">
-                            <div className="d-flex justify-between align-items-center">
-                                <p className="text-[#fff]  text-[16px] p-0 m-0">SERVICES</p>
-                                <p className="text-[#77FB38] p-0 m-0 align-items-center d-flex gap-2 text-[16px] ">MORE SERVICES
-                                    <svg width="16" height="16" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.892377 0.980469H56V56.0881H53.476V5.28923L1.78475 56.9805L0 55.1957L51.6912 3.50448H0.892377V0.980469Z" fill="#77FB38" />
-                                    </svg>
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div className="row align-items-center justify-center">
-                        <div className="col-md-10">
-                            <div className="row">
-                                <div className="col-md-10 sm:pt-[50px] pt-[30px]">
-                                    <div className="flex">
-                                        <div className="col-md-8 mb-4">
-                                            <p className="text-[#fff] p-0 m-0 align-items-center d-flex gap-2 sm:text-[35px] text-[25px] font-[cd-m]  sm:leading-[38px] ">MEDIA PRODUCTIVITY   <svg width="25" height="25" className="sm:w-[60px] w-[20px]" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.892377 0.980469H56V56.0881H53.476V5.28923L1.78475 56.9805L0 55.1957L51.6912 3.50448H0.892377V0.980469Z" fill="#77FB38" />
-                                            </svg></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-10 mb-4 sm:pt-[50px] pt-[30px]">
-                                    <div className="row align-items-center sm:justify-end justify-center">
-                                        <div className="col-md-6 text-end">
-                                            <div className="d-flex justify-content-end">
-                                                <p
-                                                    className="text-[#fff] p-0 m-0 align-items-center d-flex gap-2 sm:text-[35px] text-[25px] font-[cd-m] sm:leading-[38px] justify-end"
-                                                >
-                                                    <span >CREATIVE DESIGN</span>
-                                                    <svg
-                                                        width="25"
-                                                        height="25"
-                                                        className="sm:w-[60px] w-[20px]"
-                                                        viewBox="0 0 56 57"
-                                                        fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                    >
-                                                        <path
-                                                            fill-rule="evenodd"
-                                                            clip-rule="evenodd"
-                                                            d="M0.892377 0.980469H56V56.0881H53.476V5.28923L1.78475 56.9805L0 55.1957L51.6912 3.50448H0.892377V0.980469Z"
-                                                            fill="#77FB38"
-                                                        />
-                                                    </svg>
-                                                </p>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="row align-items-center sm:justify-center justify-center">
-                                    <div className="col-md-10 sm:pt-[100px] pt-[30px]">
-                                        <div className="col-md-8">
-                                            <p className='text-[#fff] p-0 m-0 align-items-start d-flex gap-2 sm:text-[35px] text-[25px] font-[cd-m]  sm:leading-[40px]'> SOCIAL MEDIA MARKETING<br /> & MANAGEMENT  <svg width="25" height="25" className="sm:w-[60px] w-[20px]" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.892377 0.980469H56V56.0881H53.476V5.28923L1.78475 56.9805L0 55.1957L51.6912 3.50448H0.892377V0.980469Z" fill="#77FB38" />
-                                            </svg></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                </div>
-            </section>
-
-            <section className="bg-[#000] overflow-hidden sm:px-20 px-6 sm:py-[100px] py-[30px]">
-                <div className="container-fluid p-0">
-
-                    <div className="row align-items-center justify-center">
-                        <div className="col-md-12">
-                            <div className="d-flex justify-between align-items-center">
-                                <p className="text-[#fff]  text-[16px] p-0 m-0">RECENT WORKS</p>
-                                <p className="text-[#77FB38] p-0 m-0 align-items-center d-flex gap-2 text-[16px] ">MORE PROJECT
-                                    <svg width="16" height="16" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.892377 0.980469H56V56.0881H53.476V5.28923L1.78475 56.9805L0 55.1957L51.6912 3.50448H0.892377V0.980469Z" fill="#77FB38" />
-                                    </svg>
-                                </p>
-                            </div>
-                        </div>
-                        <div className="row sm:pt-[50px] pt-[50px] ">
-                            <div className="col-md-12 ">
-                                <div className="border border-[1px] border-[#5B5B5B] border-t w-full"></div>
-                                <p className="text-[#5B5B5B]  text-[25px] font-[cd-m] pt-[30px]  pb-[10px] text-center">EZEV</p>
-                            </div>
-                            <div className="col-md-12 ">
-                                <div className="border border-[1px] border-[#5B5B5B] border-t w-full"></div>
-                                <p className="text-[#5B5B5B]  text-[25px] font-[cd-m] pt-[30px]  pb-[10px] text-center">TYRA VENTURES</p>
-                            </div>
-                            <div className="col-md-12 ">
-                                <div className="border border-[1px] border-[#5B5B5B] border-t w-full"></div>
-                                <p className="text-[#5B5B5B]  text-[25px] font-[cd-m] pt-[30px]  pb-[10px] text-center">CLOUD ESSENTIALS</p>
-                            </div>
-                            <div className="col-md-12 ">
-                                <div className="border border-[1px] border-[#5B5B5B] border-t w-full"></div>
-                                <p className="text-[#5B5B5B]  text-[25px] font-[cd-m] pt-[30px]  pb-[10px] text-center">CLOUD BUSINESS SETUP SERVICES</p>
-                            </div>
-                            <div className="col-md-12 ">
-                                <div className="border border-[1px] border-[#5B5B5B] border-t w-full"></div>
-                                <p className="text-[#5B5B5B]  text-[25px] font-[cd-m] pt-[30px]  pb-[10px] text-center">CLOUD ACCOUNTING INCORPORATION</p>
-                            </div>
-                            <div className="col-md-12 ">
-                                <div className="border border-[1px] border-[#5B5B5B] border-t w-full"></div>
-                                <p className="text-[#5B5B5B]  text-[25px] font-[cd-m] pt-[30px]  pb-[10px] text-center">SCRIPT STUDIO</p>
-                            </div>
-                            <div className="col-md-12 ">
-                                <div className="border border-[1px] border-[#5B5B5B] border-t w-full"></div>
-                                <p className="text-[#5B5B5B]  text-[25px] font-[cd-m] pt-[30px]  pb-[10px] text-center">BODY RESET</p>
-                            </div>
-                        </div>
-
-
-
-                    </div>
-
-
-                </div>
-            </section>
-            <section className="bg-[#000] overflow-hidden sm:px-20 px-6 sm:py-[50px] py-[30px]">
-                <div className="container-fluid p-0">
-
-                    <div className="row align-items-center justify-center">
-                        <div className="col-md-12">
-                            <div className="d-flex justify-between align-items-center">
-                                <p className="text-[#fff]  text-[16px] p-0 m-0 font-[cd-r]">WHY WORK WITH US</p>
-
-                            </div>
-                        </div>
-                        <div className="row sm:pt-[100px] pt-[50px] sm:justify-end justify-center ">
-                            <div className="col-md-8 ">
-                                <div className="row">
-                                    <div className="col-md-6 mb-4">
-                                        <p className="text-[16px] text-[#fff] font-[cd-r]">/ 001</p>
-                                        <p className="text-[#ffff]  text-[25px] font-[cd-se]  pt-[10px] "><span className="text-[#77FB38]">BUSINESS-FOCUSED DESIGN </span> FOR A COMPETITIVE ADVANTAGE
-                                        </p>
-                                    </div>
-                                    <div className="col-md-6 mb-4">
-                                        <p className="text-[16px] text-[#fff] font-[cd-r]">/ 002</p>
-
-                                        <p className="text-[#ffff]  text-[25px] font-[cd-se]  pt-[10px] "> STRATEGIES COMBINING  <span className="text-[#77FB38]">  DESIGN , MARKETING AND CONSULTING  </span>
-                                        </p>
-                                    </div>
-                                    {/*  */}
-                                    <div className="col-md-6 mb-4">
-                                        <p className="text-[16px] text-[#fff] font-[cd-r]">/ 003</p>
-                                        <p className="text-[#ffff]  text-[25px] font-[cd-se]  pt-[10px] "><span className="text-[#77FB38]">
-                                            DATA-DRIVEN INSIGHTS </span> THAT SHAPE SMART DECISIONS
-                                        </p>
-                                    </div>
-                                    <div className="col-md-6 mb-4">
-                                        <p className="text-[16px] text-[#fff] font-[cd-r]">/ 004</p>
-
-                                        <p className="text-[#ffff]  text-[25px] font-[cd-se]  pt-[10px] ">  <span className="text-[#77FB38]">
-                                            VERSATILE INDUSTRY EXPERIENCE   </span>TO MEET YOUR GOALS
-                                        </p>
-                                    </div>
-                                    {/*  */}
-                                    <div className="col-md-6 mb-4">
-                                        <p className="text-[16px] text-[#fff] font-[cd-r]">/ 005</p>
-                                        <p className="text-[#ffff]  text-[25px] font-[cd-se]  pt-[10px] ">  <span className="text-[#77FB38]">
-
-                                            FULL TRANSPARENCY   </span>ACROSS EVERY STAGE OF THE PROCES
-                                        </p>
-                                    </div>
-                                    <div className="col-md-6 mb-4">
-                                        <p className="text-[16px] text-[#fff] font-[cd-r]">/ 006</p>
-
-                                        <p className="text-[#ffff]  text-[25px] font-[cd-se]  pt-[10px] "><span className="text-[#77FB38]">
-                                            A TEAM OF PROFESSIONALS </span>
-                                            DEDICATED TO QUALITY AND RESULTS
-                                        </p>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-
-
-                    </div>
-
-
-                </div>
-            </section>
-            <section className="bg-[#000] overflow-hidden sm:px-20 px-6 sm:py-[100px] py-[30px]">
-                <div className="container-fluid p-0">
-                    <Swiper2 />
-
-                </div>
-            </section>
-            <section className="bg-[#000] overflow-hidden sm:px-20 px-6 sm:py-[30px] py-[30px]  ">
+            <section className="bg-[#000]  overflow-hidden sm:px-20 px-6 sm:py-[100px] py-[30px]">
                 <div className="container-fluid p-0">
 
                     <div className="row align-items-center justify-center">
                         <div className="col-md-10">
-                            <div className="d-flex justify-center align-items-center">
-                                <p className="text-[#77FB38]  sm:text-[45px] text-[25px] sm:leading-[53px] leading-[28px] p-0 m-0 font-[cd-b]">AWARD WINNING STRIX PRODUCTION <span className="text-[#fff] "><br />WITH MORE THAN 150 AWARDS</span></p>
+                            <div className="row align-items-center">
+                                <div className="col-md-6 mb-4">
+                                    <div>
+                                        <div className="col-md-10 ">
+                                            <Image
+                                                src="/assets/image 6.png"
+                                                alt="Person 1"
+
+                                                width='5550'
+                                                height='550'
+                                                className="w-full  rounded"
+
+                                            />
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div className="col-md-6 mb-4 ">
+                                    <div className="d-flex justify-end">
+                                        <div className="col-md-10">
+                                            <p className="sm:text-[25px] text-[18px] font-[cd-m] text-[#fff] pt-3">Our Journey, Your Story</p>
+                                            <p className="sm:text-[16px] text-[16px] font-[cd-r] text-[#fff] ">Starting at the age of 19, Strix Productions is a story of perseverance, growth, and passion. From a single idea to a thriving agency generating impressive milestones, our journey is driven by a belief in creativity and hard work. We may not be a massive corporation, but we are proud of how far we’ve come – and we’re just getting started. </p>
+
+
+                                            <p className="sm:text-[16px] text-[16px] font-[cd-r] text-[#fff]  pb-4">Join us on this journey. Let’s create something extraordinary together.</p>
+                                            <button className="border border-white rounded-full px-5 py-2  text-[#fff]">lET’S TALK
+
+                                            </button>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
 
                             </div>
                         </div>
-
-
-
 
                     </div>
 
 
                 </div>
             </section>
+
+
             <section className="bg-[#000] overflow-hidden sm:px-20 px-6 sm:py-[100px] py-[30px]">
                 <div className="container-fluid p-0">
-                    <Swiper3 />
+                    <div className="row gx-4 gy-4">
+  <div className="col-md-4 mb-4 d-flex">
+    <div className="border border-white rounded-lg p-5 flex-grow-1 d-flex flex-column">
+      <Image
+        src="/assets/Group 17626.png"
+        className="w-[60px]"
+        width={1080}
+        height={1080}
+        alt="no-img"
+      />
+      <p className="font-[cd-m] text-[22px] text-white pt-4">Media Editing:</p>
+      <p className="font-[cd-r] text-[16px] text-gray-400 pt-3">
+        From video production to photo editing, we enhance your content to perfection.
+      </p>
+    </div>
+  </div>
+
+  <div className="col-md-4 mb-4 d-flex">
+    <div className="border border-white rounded-lg p-5 flex-grow-1 d-flex flex-column">
+      <Image
+        src="/assets/Group 17627.png"
+        className="w-[60px]"
+        width={1080}
+        height={1080}
+        alt="no-img"
+      />
+      <p className="font-[cd-m] text-[22px] text-white pt-4">Graphic Design:</p>
+      <p className="font-[cd-r] text-[16px] text-gray-400 pt-3">
+      Custom logos, social media posts, and thumbnails that capture your audience’s attention.
+      </p>
+    </div>
+  </div>
+
+  <div className="col-md-4 mb-4 d-flex">
+    <div className="border border-white rounded-lg p-5 flex-grow-1 d-flex flex-column">
+      <Image
+        src="/assets/Group 17628.png"
+        className="w-[60px]"
+        width={1080}
+        height={1080}
+        alt="no-img"
+      />
+      <p className="font-[cd-m] text-[22px] text-white pt-4">UI/UX Design:</p>
+      <p className="font-[cd-r] text-[16px] text-gray-400 pt-3">
+      Sleek, user-focused designs for websites and applications.
+      </p>
+    </div>
+  </div>
+  <div className="col-md-4 mb-4 d-flex">
+    <div className="border border-white rounded-lg p-5 flex-grow-1 d-flex flex-column">
+      <Image
+        src="/assets/Group 17629.png"
+        className="w-[60px]"
+        width={1080}
+        height={1080}
+        alt="no-img"
+      />
+      <p className="font-[cd-m] text-[22px] text-white pt-4">Social Media Marketing:</p>
+      <p className="font-[cd-r] text-[16px] text-gray-400 pt-3">
+      Build your online presence with data-driven strategies and creative campaigns.
+      </p>
+    </div>
+  </div>
+
+  <div className="col-md-4 mb-4 d-flex">
+    <div className="border border-white rounded-lg p-5 flex-grow-1 d-flex flex-column">
+      <Image
+        src="/assets/Group 17630.png"
+        className="w-[60px]"
+        width={1080}
+        height={1080}
+        alt="no-img"
+      />
+      <p className="font-[cd-m] text-[22px] text-white pt-4">Branding: </p>
+      <p className="font-[cd-r] text-[16px] text-gray-400 pt-3">
+      Develop a cohesive and powerful brand identity to stand out in the market.
+      </p>
+    </div>
+  </div>
+
+  <div className="col-md-4 mb-4 d-flex">
+    <div className="border border-white rounded-lg p-5 flex-grow-1 d-flex flex-column">
+      <Image
+        src="/assets/Group 17632.png"
+        className="w-[60px]"
+        width={1080}
+        height={1080}
+        alt="no-img"
+      />
+      <p className="font-[cd-m] text-[22px] text-white pt-4">Digital Marketing:</p>
+      <p className="font-[cd-r] text-[16px] text-gray-400 pt-3">
+      Build your online presence with data-driven strategies and creative campaigns.
+      </p>
+    </div>
+  </div>
+</div>
+
+
 
                 </div>
             </section>
+
+      
+          
             <section className="bg-[#000] overflow-hidden sm:px-20 px-6 sm:py-[100px] py-[30px] sm:pt-[50px] pt-[20px]">
                 <div className="container-fluid p-0">
 
