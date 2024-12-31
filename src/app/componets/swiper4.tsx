@@ -10,11 +10,12 @@ import Image from 'next/image';
 
 const AutoSwiper = () => {
   const items = [
-    { text: "Akash Verma", subtext:'Business Development Head', imgUrl: "/assets/image (22).png" },
+
     { text: "Rajnandan soni",  subtext:'Founder',imgUrl: "/assets/image (23).png" },
     { text: "Kirti fore",  subtext:'Management', imgUrl: "/assets/image (24).png" },
     { text: "Rohan Rana",   subtext:'Design Head',imgUrl: "/assets/image (25).png" },
-    { text: "Akash Verma", subtext:'Business Development Head', imgUrl: "/assets/image (22).png" },
+    { text: "Rajnandan soni",  subtext:'Founder',imgUrl: "/assets/image (23).png" },
+
     { text: "Rajnandan soni",  subtext:'Founder',imgUrl: "/assets/image (23).png" },
     { text: "Kirti fore",  subtext:'Management', imgUrl: "/assets/image (24).png" },
     { text: "Rohan Rana",   subtext:'Design Head',imgUrl: "/assets/image (25).png" },
