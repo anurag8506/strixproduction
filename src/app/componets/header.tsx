@@ -100,12 +100,12 @@ const Header = () => {
           <div className="col-md-4">
           <div className="sm:flex sm:gap-3 justify-end sm:block hidden ">
     <Link href="/" className="text-white text-[18px] no-underline block sm:py-[0px] py-[10px]">
-      <span className="hover:text-gray-900 font-[cd-r] text-white no-underline">
+      <span className=" font-[cd-r] text-white no-underline">
         WORK
       </span>
     </Link>
     <Link href="/" className="text-white text-[18px] no-underline block sm:py-[0px] py-[10px]">
-      <span className="hover:text-gray-900 font-[cd-r]text-white no-underline">
+      <span className=" font-[cd-r]text-white no-underline">
         BLOG
       </span>
     </Link>

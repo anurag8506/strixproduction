@@ -274,7 +274,7 @@ export default function Home() {
                     <div className="row align-items-center justify-center">
                         <div className="col-md-10">
                             <div className="d-flex justify-between align-items-center">
-                                <p className="text-[#77FB38]  sm:text-[55px] text-[30px] sm:leading-[60px] leading-[33px] p-0 m-0 font-[cd-b]">AWARD WINNING STRIX PRODUCTION <span className="text-[#fff] "><br />WITH MORE THAN 150 AWARDS</span></p>
+                                <p className="text-[#77FB38]  sm:text-[55px] text-[25px] sm:leading-[60px] leading-[28px] p-0 m-0 font-[cd-b]">AWARD WINNING STRIX PRODUCTION <span className="text-[#fff] "><br />WITH MORE THAN 150 AWARDS</span></p>
 
                             </div>
                         </div>
