@@ -7,10 +7,10 @@ export default function Home() {
         <>
 
 
-            <section className="bg-[#000] overflow-hidden sm:px-20 px-6 sm:py-[50px] py-[30px]">
+            <section className="bg-[#000] overflow-hidden sm:px-20 px-6">
                 <div className="container-fluid p-0">
                     <div className="row sm:pt-[10px] ">
-                        <div className="col-md-4 pb-4">
+                        <div className="col-md-3 pb-4">
                             <div className="col-md-8">
                                 <Link href="/">
                                     <Image
@@ -22,143 +22,106 @@ export default function Home() {
                                     />
                                 </Link>
 
-                           <p className="text-[#C0C0C0] text-[16px] pt-2 ">A-78, Gali no. 5 New Modern Shahdara, delhi-110032,</p>
+                                <p className="text-[#C0C0C0] text-[16px] pt-2 ">Welcome to Strix Productions – where creativity meets strategy to deliver outstanding digital solutions.</p>
                             </div>
                         </div>
-                        <div className="col-md-4 pb-4">
-                            <div className="flex justify-center"> 
-                            <div >
-                                <p className="text-[18px] text-[#fff] font-[cd-r]">YEP, PDFS ARE STILL COOL<br />
+                        <div className="col-md-3 pb-4">
+                            <div className="flex justify-center">
+                                <div >
+                                    <p className="text-[18px] text-[#fff] font-[cd-r]">Know more about my portfolio </p>
+                                    <Link href='https://strixproductions.myportfolio.com/' className="no-underline">
+                                        <p className="text-[18px] text-[#EA9A4A] font-[cd-r] d-flex align-items-center gap-2">
+                                            Click Here<svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0.799805 12.99H8.7998M4.7998 0.98999V10.3233M4.7998 10.3233L8.1331 6.98999M4.7998 10.3233L1.46647 6.98999" stroke="#EA9A4A" strokeLinecap="square" />
+                                            </svg>
 
-                                    GRAB OURS HERE</p>
-                                <p className="text-[18px] text-[#EA9A4A] font-[cd-r] d-flex align-items-center gap-2">
-                                    DOWNLOAD PDF<svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.799805 12.99H8.7998M4.7998 0.98999V10.3233M4.7998 10.3233L8.1331 6.98999M4.7998 10.3233L1.46647 6.98999" stroke="#EA9A4A" strokeLinecap="square" />
-                                    </svg>
-
-                                </p>
-                                <div className="d-flex justify-between pt-4 ">
-                                    <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clipPath="url(#clip0_68_2708)">
-                                            <path d="M19.0561 20.1677C19.0561 20.1677 20.9491 20.0237 20.9491 17.7566C20.9491 15.4913 19.6652 14.3747 17.7028 14.3747L10.98 14.364V26.8826H17.8591C17.8591 26.8826 21.2987 26.9916 21.2987 23.1271C21.2987 23.1271 21.5513 20.1677 19.0561 20.1677ZM13.4815 16.2418H16.9211C16.9211 16.2418 18.098 16.2612 18.098 17.7885C18.098 19.3715 16.9211 19.3715 16.9211 19.3715H13.4815V16.2418ZM17.2338 25.0048H13.4815V21.2493H17.2338C17.2338 21.2493 19.1099 21.2687 19.1099 23.1271C19.1099 24.9854 17.5039 25.0048 17.2338 25.0048Z" fill="white" />
-                                            <path d="M26.6136 17.4939C21.9152 17.4939 21.9233 22.1884 21.9233 22.1884C21.9233 22.1884 21.6106 26.8829 26.6136 26.8829C26.6136 26.8829 30.9912 26.8829 30.9912 23.1273H28.4898C28.4898 23.1273 28.4897 25.0051 26.6136 25.0051C26.6136 25.0051 24.7375 25.0051 24.7375 22.5014C24.7375 22.5014 29.7405 22.5014 30.9912 22.5014C30.9912 21.2495 30.9912 17.4939 26.6136 17.4939ZM24.7375 21.2495C24.7375 21.2495 24.6962 19.3717 26.6136 19.3717C28.5304 19.3717 28.4898 21.2495 28.4898 21.2495H24.7375Z" fill="white" />
-                                            <path d="M29.1158 15.616H24.1128V16.8678H29.1158V15.616Z" fill="white" />
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip0_68_2708">
-                                                <rect width="40" height="40" fill="white" transform="translate(0.97998 0.389893)" />
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
-                                    <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clipPath="url(#clip0_68_2713)">
-                                            <g clipPath="url(#clip1_68_2713)">
-                                                <path d="M20.857 32.3031C14.234 32.3031 8.84326 26.9124 8.84326 20.2894C8.84326 13.6663 14.234 8.27563 20.857 8.27563C27.4801 8.27563 32.8708 13.6663 32.8708 20.2894C32.8708 26.9124 27.4801 32.3031 20.857 32.3031ZM20.857 10.2133C15.2997 10.2133 10.781 14.7321 10.781 20.2894C10.781 25.8467 15.2997 30.3654 20.857 30.3654C26.4143 30.3654 30.9331 25.8467 30.9331 20.2894C30.9331 14.7321 26.4143 10.2133 20.857 10.2133Z" fill="white" />
-                                                <path d="M17.3697 19.1073C15.0987 19.1073 12.6417 18.7701 10.0219 18.088C9.50263 17.9524 9.1926 17.4254 9.32824 16.9061C9.46387 16.3867 9.99093 16.0767 10.5102 16.2124C18.4471 18.2741 24.6593 16.9681 28.4727 12.4416C28.8177 12.0347 29.43 11.9804 29.8369 12.3253C30.2477 12.6702 30.2981 13.2826 29.9531 13.6895C26.9265 17.282 22.648 19.1073 17.3697 19.1073Z" fill="white" />
-                                                <path d="M12.5251 28.5093C12.3004 28.5093 12.0795 28.4318 11.8973 28.2767C11.4904 27.928 11.4439 27.3156 11.7888 26.9087C17.4546 20.2857 24.7869 18.7123 31.906 22.5993C32.3749 22.8551 32.5493 23.4441 32.2935 23.913C32.0378 24.382 31.4487 24.5564 30.9798 24.3006C22.4306 19.6385 16.2106 24.723 13.2614 28.1721C13.0716 28.393 12.8003 28.5093 12.5251 28.5093Z" fill="white" />
-                                                <path d="M24.0317 31.8382C23.9969 31.8382 23.962 31.8382 23.9271 31.8343C23.3962 31.7761 23.0125 31.2995 23.0707 30.7647C23.8264 23.8355 22.0437 16.8481 17.7769 9.98863C17.4939 9.53521 17.6335 8.9384 18.0869 8.65549C18.5403 8.37259 19.1371 8.5121 19.42 8.96553C23.9232 16.2009 25.7989 23.6068 24.9967 30.9778C24.9386 31.4739 24.5201 31.8382 24.0317 31.8382Z" fill="white" />
-                                            </g>
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip0_68_2713">
-                                                <rect width="40" height="40" fill="white" transform="translate(0.97998 0.389893)" />
-                                            </clipPath>
-                                            <clipPath id="clip1_68_2713">
-                                                <rect width="40" height="40" fill="white" transform="translate(0.97998 0.389893)" />
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
-
-                                    <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clipPath="url(#clip0_68_2721)">
-                                            <g clipPath="url(#clip1_68_2721)">
-                                                <path d="M17.6512 20.4413C17.6512 18.5988 19.144 17.1047 20.986 17.1047C22.828 17.1047 24.3216 18.5988 24.3216 20.4413C24.3216 22.2838 22.828 23.7778 20.986 23.7778C19.144 23.7778 17.6512 22.2838 17.6512 20.4413ZM15.848 20.4413C15.848 23.2798 18.1483 25.5807 20.986 25.5807C23.8237 25.5807 26.124 23.2798 26.124 20.4413C26.124 17.6027 23.8237 15.3018 20.986 15.3018C18.1483 15.3018 15.848 17.6027 15.848 20.4413ZM25.1266 15.098C25.1265 15.3356 25.1969 15.5678 25.3287 15.7654C25.4606 15.963 25.6481 16.117 25.8674 16.208C26.0868 16.299 26.3282 16.3229 26.5611 16.2766C26.7941 16.2304 27.0081 16.1161 27.1761 15.9481C27.3441 15.7802 27.4585 15.5663 27.5049 15.3333C27.5513 15.1003 27.5277 14.8588 27.4369 14.6393C27.3461 14.4198 27.1923 14.2322 26.9948 14.1001C26.7974 13.9681 26.5653 13.8976 26.3278 13.8975C26.0094 13.8976 25.7038 14.0241 25.4787 14.2492C25.2535 14.4743 25.1269 14.7796 25.1266 15.098ZM16.9436 28.5883C15.968 28.5438 15.4378 28.3813 15.0854 28.244C14.6183 28.062 14.2849 27.8454 13.9345 27.4953C13.584 27.1452 13.3671 26.8121 13.186 26.3448C13.0487 25.9925 12.8862 25.462 12.8418 24.4861C12.7933 23.4311 12.7836 23.1142 12.7836 20.4414C12.7836 17.7685 12.7941 17.4525 12.8418 16.3966C12.8863 15.4207 13.05 14.8912 13.186 14.5379C13.3679 14.0706 13.5845 13.7372 13.9345 13.3866C14.2845 13.0361 14.6175 12.8191 15.0854 12.6379C15.4376 12.5005 15.968 12.338 16.9436 12.2936C17.9983 12.2451 18.3151 12.2354 20.986 12.2354C23.6569 12.2354 23.974 12.2459 25.0296 12.2936C26.0052 12.3381 26.5345 12.5018 26.8878 12.6379C27.3549 12.8191 27.6883 13.0365 28.0387 13.3866C28.3892 13.7367 28.6053 14.0706 28.7872 14.5379C28.9245 14.8902 29.087 15.4207 29.1314 16.3966C29.1799 17.4525 29.1896 17.7685 29.1896 20.4414C29.1896 23.1142 29.1799 23.4302 29.1314 24.4861C29.0869 25.462 28.9236 25.9924 28.7872 26.3448C28.6053 26.8121 28.3887 27.1455 28.0387 27.4953C27.6887 27.845 27.3549 28.062 26.8878 28.244C26.5356 28.3814 26.0052 28.5439 25.0296 28.5883C23.9749 28.6368 23.6581 28.6465 20.986 28.6465C18.3139 28.6465 17.998 28.6368 16.9436 28.5883ZM16.8607 10.493C15.7955 10.5415 15.0677 10.7105 14.432 10.9579C13.7737 11.2134 13.2164 11.5562 12.6595 12.1124C12.1026 12.6685 11.7608 13.2269 11.5054 13.8854C11.258 14.5216 11.0891 15.2493 11.0406 16.3148C10.9913 17.382 10.98 17.7232 10.98 20.4413C10.98 23.1594 10.9913 23.5005 11.0406 24.5677C11.0891 25.6333 11.258 26.3609 11.5054 26.9972C11.7608 27.6553 12.1027 28.2143 12.6595 28.7702C13.2163 29.3261 13.7737 29.6684 14.432 29.9247C15.0689 30.1721 15.7955 30.341 16.8607 30.3895C17.9282 30.4381 18.2687 30.4502 20.986 30.4502C23.7033 30.4502 24.0444 30.4389 25.1113 30.3895C26.1766 30.341 26.9039 30.1721 27.54 29.9247C28.1979 29.6684 28.7556 29.3264 29.3125 28.7702C29.8694 28.214 30.2105 27.6553 30.4666 26.9972C30.714 26.3609 30.8837 25.6332 30.9314 24.5677C30.9799 23.4997 30.9912 23.1594 30.9912 20.4413C30.9912 17.7232 30.9799 17.382 30.9314 16.3148C30.8829 15.2492 30.714 14.5212 30.4666 13.8854C30.2105 13.2273 29.8685 12.6694 29.3125 12.1124C28.7565 11.5553 28.1979 11.2134 27.5408 10.9579C26.904 10.7105 26.1765 10.5407 25.1121 10.493C24.0452 10.4445 23.7041 10.4324 20.9868 10.4324C18.2695 10.4324 17.9282 10.4437 16.8607 10.493Z" fill="white" />
-                                            </g>
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip0_68_2721">
-                                                <rect width="40" height="40" fill="white" transform="translate(0.97998 0.389893)" />
-                                            </clipPath>
-                                            <clipPath id="clip1_68_2721">
-                                                <rect width="40" height="40" fill="white" transform="translate(0.97998 0.389893)" />
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
-                                    <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clipPath="url(#clip0_68_2726)">
-                                            <g clipPath="url(#clip1_68_2726)">
-                                                <path d="M26.7312 11.3899H29.798L23.0979 19.0476L30.98 29.4681H24.8084L19.9746 23.1481L14.4436 29.4681H11.3749L18.5413 21.2773L10.98 11.3899H17.3083L21.6776 17.1666L26.7312 11.3899ZM25.6548 27.6324H27.3542L16.3849 13.1291H14.5613L25.6548 27.6324Z" fill="white" />
-                                            </g>
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip0_68_2726">
-                                                <rect width="40" height="40" fill="white" transform="translate(0.97998 0.389893)" />
-                                            </clipPath>
-                                            <clipPath id="clip1_68_2726">
-                                                <rect width="40" height="40" fill="white" transform="translate(0.97998 0.389893)" />
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
-                                    <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clipPath="url(#clip0_68_2731)">
-                                            <g clipPath="url(#clip1_68_2731)">
-                                                <path d="M29.4995 10.3899H12.4566C11.6402 10.3899 10.98 11.0344 10.98 11.8313V28.9446C10.98 29.7415 11.6402 30.3899 12.4566 30.3899H29.4995C30.3159 30.3899 30.98 29.7415 30.98 28.9485V11.8313C30.98 11.0344 30.3159 10.3899 29.4995 10.3899ZM16.9136 27.4329H13.9448V17.886H16.9136V27.4329ZM15.4292 16.5852C14.4761 16.5852 13.7066 15.8157 13.7066 14.8665C13.7066 13.9172 14.4761 13.1477 15.4292 13.1477C16.3784 13.1477 17.148 13.9172 17.148 14.8665C17.148 15.8118 16.3784 16.5852 15.4292 16.5852ZM28.023 27.4329H25.0581V22.7922C25.0581 21.6868 25.0386 20.261 23.5152 20.261C21.9722 20.261 21.7378 21.468 21.7378 22.7141V27.4329H18.7769V17.886H21.6206V19.1907H21.6597C22.0542 18.4407 23.023 17.6477 24.4644 17.6477C27.4683 17.6477 28.023 19.6243 28.023 22.1946V27.4329Z" fill="white" />
-                                            </g>
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip0_68_2731">
-                                                <rect width="40" height="40" fill="white" transform="translate(0.97998 0.389893)" />
-                                            </clipPath>
-                                            <clipPath id="clip1_68_2731">
-                                                <rect width="40" height="40" fill="white" transform="translate(0.97998 0.389893)" />
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
-                                    <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clipPath="url(#clip0_68_2738)">
-                                            <path d="M26.7411 24.5644C25.7108 25.4729 24.3503 25.9764 22.8574 25.9764C19.5664 25.9764 17.1496 23.6061 17.1496 20.3516C17.1496 17.0972 19.4895 14.8266 22.8574 14.8266C24.3243 14.8266 25.7108 15.3058 26.7671 16.2142L27.4852 16.8199L30.6757 13.6919L29.8772 12.9853C27.9998 11.3227 25.5073 10.3899 22.8562 10.3899C16.9414 10.3899 12.646 14.576 12.646 20.3272C12.646 26.0541 17.0443 30.3899 22.8562 30.3899C25.557 30.3899 28.0755 29.4571 29.9292 27.7678L30.7005 27.0612L27.4604 23.9356L26.7411 24.5644Z" fill="white" />
-                                            <path d="M22.7027 17.0471C24.5931 17.0471 26.125 18.5473 26.125 20.4025C26.125 22.2554 24.5931 23.7579 22.7027 23.7579C20.8135 23.7579 19.2827 22.2554 19.2827 20.4025C19.2839 18.5485 20.8147 17.0471 22.7027 17.0471Z" fill="white" />
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip0_68_2738">
-                                                <rect width="40" height="40" fill="white" transform="translate(0.97998 0.389893)" />
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
-
-
-
-
+                                        </p>
+                                    </Link>
 
                                 </div>
-                            </div>
 
                             </div>
                         </div>
-                        <div className="col-md-4 pb-4">
-                            <div className="sm:text-end">
-                                <Link href='#' className="text-white">
-                                    <p className="text-[18px] text-[#fff] font-[cd-r] underline">
-                                        WORKS
+                        <div className="col-md-2 pb-4">
+                            <div>
+
+                                <p className="text-[18px] text-[#fff] font-[cd-m]">   Quick Link</p>
+                                <Link href='/' className="no-underline">
+                                    <p className="text-[16px] text-[#C5C5C5]  font-[cd-r] ">
+                                        Home
                                     </p>
                                 </Link>
-                                <Link href='#' className="text-white">
-                                    <p className="text-[18px] text-[#fff] font-[cd-r] underline">
-                                        BLOGS
+                                <Link href='/project' className="no-underline">
+                                    <p className="text-[16px] text-[#C5C5C5]  font-[cd-r] ">
+                                        Project
+                                    </p>
+                                </Link>
+                                <Link href='/about' className="no-underline">
+                                    <p className="text-[16px] text-[#C5C5C5]  font-[cd-r] ">
+                                        About Us
+                                    </p>
+                                </Link>
+                                <Link href='/contact' className="no-underline">
+                                    <p className="text-[16px] text-[#C5C5C5]  font-[cd-r] ">
+                                       Contact Us
+                                    </p>
+                                </Link>
+
+
+                            </div>
+
+                        </div>
+                        <div className="col-md-2 pb-4">
+                            <div>
+
+                                <p className="text-[18px] text-[#fff] font-[cd-m]">Services</p>
+                                <Link href='/' className="no-underline">
+                                    <p className="text-[16px] text-[#C5C5C5]  font-[cd-r] ">
+                                    Media Productivity
+                                    </p>
+                                </Link>
+                                <Link href='/project' className="no-underline">
+                                    <p className="text-[16px] text-[#C5C5C5]  font-[cd-r] ">
+                                    UI/UX Design
+                                    </p>
+                                </Link>
+                                <Link href='/about' className="no-underline">
+                                    <p className="text-[16px] text-[#C5C5C5]  font-[cd-r] ">
+                                    Branding & Identity
+                                    </p>
+                                </Link>
+                                <Link href='/contact' className="no-underline">
+                                    <p className="text-[16px] text-[#C5C5C5]  font-[cd-r] ">
+                                    Creative Designs
+                                    </p>
+                                </Link>
+
+
+                            </div>
+
+                        </div>
+                        <div className="col-md-2 pb-4">
+                            <div>
+
+                                <p className="text-[18px] text-[#000] font-[cd-m]"> .k</p>
+                                <Link href='/' className="no-underline">
+                                    <p className="text-[16px] text-[#C5C5C5]  font-[cd-r] ">
+                                    Social Media Management
+                                    </p>
+                                </Link>
+                                <Link href='/project' className="no-underline">
+                                    <p className="text-[16px] text-[#C5C5C5]  font-[cd-r] ">
+                                    Digital Marketing
                                     </p>
                                 </Link>
                             </div>
-
                         </div>
                         <div className="col-md-12">
                             <div className="border border-[1px] border[#fff]"></div>
+                            <p className="text-[#fff] text-[16px] font-[cd-m] text-center pt-4">
+                                STRIX PRODUCTION © 2025-2026 ALL RIGHTS RESERVED</p>
                         </div>
-                        <div className="sm:flex justify-between pt-4">
-                            <p className="text-[#EA9A4A] text-[16px] font-[cd-m]">11:27 AM (COORDINATED UNIVERSAL TIME)</p>
-                            <p className="text-[#fff] text-[16px] font-[cd-m]">
-                                STRIX PRODUCTION © 2024 ALL RIGHTS RESERVED</p>
 
-                        </div>
                     </div>
 
                 </div>
