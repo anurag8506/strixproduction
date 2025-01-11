@@ -16,7 +16,7 @@ const SliderComponent: React.FC = () => {
 
   const settings = {
     centerMode: true,
-    centerPadding: "500px",
+    centerPadding: "400px",
     slidesToShow: 1,
     responsive: [
       {

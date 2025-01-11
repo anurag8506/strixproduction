@@ -160,7 +160,7 @@ export default function Home() {
 
 
                                             <p className="sm:text-[16px] text-[16px] font-[cd-r] text-[#fff]  pb-4">Join us on this journey. Let’s create something extraordinary together.</p>
-                                            <button className="border border-white rounded-full px-5 py-2  text-[#fff]">lET’S TALK
+                                            <button className="border border-white rounded-full px-5 py-2  hover:bg-[#EA9A4A] text-[#fff]">lET’S TALK
 
                                             </button>
 
