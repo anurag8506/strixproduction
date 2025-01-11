@@ -8,7 +8,7 @@ export default function Home() {
             <section className="flex items-center justify-center bg-[#000] overflow-hidden sm:px-20 px-6 sm:py-[50px] py-[30px] sm:pt-[50px] pt-[20px]">
                 <div className="container-fluid p-0">
 
-                    <div className="row align-items-end sm:pt-[40px] sm:pb-[40px]">
+                    <div className="row align-items-end sm:pt-[40px] sm:pb-[40px]"  data-aos="fade-up">
                         <div className="col-md-6 mb-4" data-aos="fade-down"
                             data-aos-easing="linear"
                             data-aos-duration="1500">

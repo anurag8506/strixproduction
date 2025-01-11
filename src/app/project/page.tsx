@@ -112,7 +112,7 @@ export default function Home() {
             <section className="bg-[#000]  sm:px-20 px-6 sm:py-[50px] py-[10px]">
                 <div className="container-fluid p-0">
               <div className="row">
-                <div className="col-md-4 mb-4 sticky top-[140px] max-h-screen">
+                <div className="col-md-3 mb-4 sticky top-[140px] max-h-screen">
                 <p className="text-[#ffff] font-[600] sm:text-[45px] text-[30px] sm:leading-[50px] leading-[35px] font-[cd-b]">Our<span className="text-[#EA9A4A]"><br/> Portfolio</span></p>
                 <p className="text-[18px] text-[#fff] pt-4">Strix Production</p>
                 <div className="text-[#C5C5C5]">
@@ -126,7 +126,7 @@ export default function Home() {
                                 </ul>
                             </div>
                 </div>
-                <div className="col-md-8 mb-4">
+                <div className="col-md-9 mb-4">
                     <p className="text-[25px] text-[#fff] font-[cd-m]">PureRx Formulas</p>
                     <div className="row">
                         <div className="col-md-12 mb-4">
@@ -167,10 +167,12 @@ export default function Home() {
             </section>
 
 
-
-       
+            <section className="bg-[#000] overflow-hidden sm:px-20 px-6 ">
             <Contact />
 
+            </section>
+       
+           
 
             <Footer />
 
