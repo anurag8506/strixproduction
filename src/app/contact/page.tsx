@@ -25,7 +25,7 @@ export default function Home() {
             <section className="bg-[#000] overflow-hidden min-h-[100vh]">
                 <div className="container-fluid p-0 min-h-[100vh]">
                     <div className="relative sm:min-h-[100vh]">
-                        <Image src='/assets/contactUs.svg' alt='...' fill objectFit="cover" className="w-full sm:h-[100vh]  z-[0]" />
+                        <Image src='/assets/contactus.svg' alt='...' fill objectFit="cover" className="w-full sm:h-[100vh]  z-[0]" />
                         <div className="sm:px-20 px-6">
                             <div className="row align-items-center relative z-[1] pt-[100px] sm:bottom-[-140px] ">
                                 <div className="col-md-12 mb-4 ">
@@ -91,8 +91,8 @@ export default function Home() {
                             </div>
                             <div className="d-flex gap-3 align-items-center pb-2 pt-2">
                                 <svg width="28" height="30" viewBox="0 0 31 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.16645 1.38892H26.3887C27.9165 1.38892 29.1665 2.63892 29.1665 4.16669V20.8334C29.1665 22.3611 27.9165 23.6111 26.3887 23.6111H4.16645C2.63867 23.6111 1.38867 22.3611 1.38867 20.8334V4.16669C1.38867 2.63892 2.63867 1.38892 4.16645 1.38892Z" stroke="#EA9A4A" stroke-width="2.77778" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M29.1665 4.16675L15.2776 13.889L1.38867 4.16675" stroke="#EA9A4A" stroke-width="2.77778" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path fillRule="evenodd" clipRule="evenodd" d="M4.16645 1.38892H26.3887C27.9165 1.38892 29.1665 2.63892 29.1665 4.16669V20.8334C29.1665 22.3611 27.9165 23.6111 26.3887 23.6111H4.16645C2.63867 23.6111 1.38867 22.3611 1.38867 20.8334V4.16669C1.38867 2.63892 2.63867 1.38892 4.16645 1.38892Z" stroke="#EA9A4A" strokeWidth="2.77778" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path d="M29.1665 4.16675L15.2776 13.889L1.38867 4.16675" stroke="#EA9A4A" strokeWidth="2.77778" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
 
                                 <p className="text-[#C5C5C5] m-0 p-0 text-[18px]">info@strixproduction.in</p>
