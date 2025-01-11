@@ -136,12 +136,12 @@ export default function Header(activePage: activePageProps) {
 
               </div>
 
-              <Link
+              {/* <Link
                 href="#"
                 className={(activePage.activePage == "BlogsPage") ? "text-[#EA9A4A] no-underline text-[16px]" : " no-underline block sm:py-0 py-[10px] text-[#fff] text-[16px] hover:text-[#EA9A4A] no-underline"}
               >
                 BLOGS
-              </Link>
+              </Link> */}
               <Link
                 href="/project"
                 className={(activePage.activePage == "ProjectPage") ? "text-[#EA9A4A] no-underline text-[16px]" : " no-underline block sm:py-0 py-[10px] text-[#fff] text-[16px] hover:text-[#EA9A4A] no-underline"}
