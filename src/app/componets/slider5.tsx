@@ -16,7 +16,7 @@ const SliderComponent: React.FC = () => {
 
   const settings = {
     centerMode: true,
-    centerPadding: "500px",
+    centerPadding: "450px",
     slidesToShow: 1,
     responsive: [
       {
@@ -46,19 +46,19 @@ const SliderComponent: React.FC = () => {
   return (
     <section className="overflow-hidden" >
       <div className="slider-container pt-5  ">
-      <div className="container-fluid mx-auto px-4 ">
+      <div className="container-fluid  px-4 ">
         <Slider {...settings}>
           {items.map((item, index) => (
-            <div className="px-2 relative" key={index}>
+            <div className="px-2 relative " key={index}>
                  
               <Image
                 src={item.imgUrl}
                 alt='...'
                 width={800}
                 height={1080}
-                className="rounded-md  h-full"
+                className="rounded-md"
               />
-              <h2 className="text-white  top-0  absolute left-[15%] text-[cd-b] text-[30px]">{item.text}</h2>
+              <h2 className="text-white  top-0   absolute text-[cd-b] text-[30px]">{item.text}</h2>
            
             </div>
           ))}
