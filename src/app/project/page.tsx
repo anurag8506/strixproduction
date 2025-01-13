@@ -109,7 +109,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="bg-[#000]  sm:px-20 px-6 sm:py-[50px] py-[10px]">
+            <section className="bg-[#000]  sm:px-20 px-6 sm:py-[100px] py-[10px]">
                 <div className="container-fluid p-0">
               <div className="row">
                 <div className="col-md-3 mb-4 sticky top-[140px] max-h-screen">
@@ -167,10 +167,7 @@ export default function Home() {
             </section>
 
 
-            <section className="bg-[#000] overflow-hidden sm:px-20 px-6 ">
             <Contact />
-
-            </section>
        
            
 

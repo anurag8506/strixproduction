@@ -16,7 +16,7 @@ const SliderComponent: React.FC = () => {
 
   const settings = {
     centerMode: true,
-    centerPadding: "400px",
+    centerPadding: "500px",
     slidesToShow: 1,
     responsive: [
       {
@@ -54,9 +54,9 @@ const SliderComponent: React.FC = () => {
               <Image
                 src={item.imgUrl}
                 alt='...'
-                width={500}
-                height={800}
-                className="rounded-md"
+                width={800}
+                height={1080}
+                className="rounded-md  h-full"
               />
               <h2 className="text-white  top-0  absolute left-[15%] text-[cd-b] text-[30px]">{item.text}</h2>
            
