@@ -62,7 +62,8 @@ const AutoSwiper = () => {
           </div>
         ))}
       </div> */}
-      <section className="py-[20px] sm:mt-[10px] bg-[#000] overflow-hidden">
+   
+      <section className="bg-[#000] overflow-hidden">
         <div className="w-[100vw]"><div className="flex justify-start items-center marquee-anim w-[400vw]">
         {items.concat(items).map((item, index) => (
           <div

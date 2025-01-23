@@ -1,14 +1,57 @@
-
+"use client"
+import { toast } from "react-hot-toast";
+import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css"
+import { Toaster } from "react-hot-toast";
 export default function Home() {
+
+    const [retailer, setRetailer] = useState({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+    });
+    const SubmitForm = () => {
+        const formData = new FormData();
+        formData.append("email", retailer.email);
+        formData.append("name", retailer.name);
+        formData.append("subject", retailer.subject);
+        formData.append("message", retailer.message);
+
+        fetch(process.env.API_URL + "subject/", {
+            method: "POST",
+            body: formData, // Add form data to the request body
+        })
+            .then((response) => response.json())
+            .then((data) => {
+                console.log(data);
+
+                if (data.status) {
+                    toast.success(data.message);
+                } else {
+                    toast.error(data.message);
+                }
+            })
+            .catch((error) => console.error("Error:", error));
+    };
+
+    const handleChangeEvent = (
+        e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    ) => {
+        const { name, value } = e.target;
+        setRetailer({
+            ...retailer,
+            [name]: value,
+        });
+    };
     return (
         <>
 
-
+<Toaster position="top-center" reverseOrder={false}  />
             <section className="flex items-center justify-center bg-[#000] overflow-hidden sm:px-20 px-6 sm:py-[50px] py-[30px] sm:pt-[50px] pt-[20px]">
                 <div className="container-fluid p-0">
 
-                    <div className="row align-items-end sm:pt-[40px] sm:pb-[40px]"  data-aos="fade-up">
+                    <div className="row align-items-end sm:pt-[40px] sm:pb-[40px]" data-aos="fade-up">
                         <div className="col-md-6 mb-4" data-aos="fade-down"
                             data-aos-easing="linear"
                             data-aos-duration="1500">
@@ -22,7 +65,7 @@ export default function Home() {
                             data-aos-duration="3000">
 
 
-                            <form className="space-y-6">
+                            <div className="space-y-6">
 
                                 <div className="relative">
                                     <div className="row align-items-center">
@@ -37,6 +80,20 @@ export default function Home() {
                                             </div>
                                         </div>
                                         <p className="font-[cd-m] sm:text-[35px] text-[20px] text-[#EA9A4A] text-end">strix.production@yahoo.com</p>
+                                        <div className="col-md-12 mb-4">
+
+                                            <label className="block text-sm font-[cd-m] text-white mb-3  pt-4">
+                                                subject
+                                            </label>
+                                            <input
+                                                type="text"
+                                                name="subject"
+                                                onChange={handleChangeEvent}
+
+                                                className="w-full bg-transparent border-b-2 border-white text-white placeholder-gray-500 focus:outline-none focus:ring-0 focus:border-green-500 font-[cd-r]"
+                                                required
+                                            />
+                                        </div>
                                         <div className="col-md-6 mb-4">
 
                                             <label className="block text-sm font-[cd-m] text-white mb-3  pt-4">
@@ -44,6 +101,8 @@ export default function Home() {
                                             </label>
                                             <input
                                                 type="text"
+                                                name="name"
+                                                onChange={handleChangeEvent}
 
                                                 className="w-full bg-transparent border-b-2 border-white text-white placeholder-gray-500 focus:outline-none focus:ring-0 focus:border-green-500 font-[cd-r]"
                                                 required
@@ -56,6 +115,8 @@ export default function Home() {
                                             </label>
                                             <input
                                                 type="email"
+                                                name="email"
+                                                onChange={handleChangeEvent}
 
                                                 className="w-full bg-transparent border-b-2 border-white text-white placeholder-gray-500 focus:outline-none focus:ring-0 focus:border-green-500 font-[cd-r] "
                                                 required
@@ -71,6 +132,8 @@ export default function Home() {
                                         MESSAGE
                                     </label>
                                     <textarea
+                                        name="message"
+                                        onChange={handleChangeEvent}
 
                                         className="w-full bg-transparent  text-white placeholder-gray-500 focus:outline-none focus:ring-0 focus:border-green-500 font-[cd-r]"
                                         rows={4}
@@ -78,13 +141,13 @@ export default function Home() {
 
                                 </div>
 
-                                <button
+                                <button onClick={() => { SubmitForm() }}
                                     type="submit"
                                     className="w-full bg-[#000]  border border-[#fff] text-white py-2  font-semibold hover:bg-[#EA9A4A] hover:border hover:border-[#EA9A4A] transition font-[cd-m]"
                                 >
                                     HIT US UP
                                 </button>
-                            </form>
+                            </div>
                         </div>
                     </div>
 

@@ -10,8 +10,11 @@ import Link from "next/link";
 import AOS from 'aos';
 import { motion } from "framer-motion";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect,useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css"
+import toast from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
+
 
 
 export default function Home() {
@@ -19,8 +22,46 @@ export default function Home() {
         AOS.init();
         AOS.refresh();
     }, []);
+    const [retailer, setRetailer] = useState({
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+    });
+    const SubmitForm = () => {
+        const formData = new FormData();
+        formData.append("email", retailer.email);
+        formData.append("name", retailer.name);
+        formData.append("phone", retailer.phone);
+        formData.append("message", retailer.message);
+
+        fetch(process.env.API_URL + "subject/", {
+            method: "POST",
+            body: formData, // Add form data to the request body
+        })
+            .then((response) => response.json())
+            .then((data) => {
+                if (data.status) {
+                    toast.success(data.message);
+                } else {
+                    toast.error(data.message);
+                }
+            })
+            .catch((error) => console.error("Error:", error));
+    };
+
+    const handleChangeEvent = (
+        e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    ) => {
+        const { name, value } = e.target;
+        setRetailer({
+            ...retailer,
+            [name]: value,
+        });
+    };
     return (
         <>
+           <Toaster position="top-center" reverseOrder={false}  />
 
             <Header activePage="ContactPage" />
             <section className="bg-[#000] overflow-hidden min-h-[100vh]">
@@ -149,7 +190,7 @@ export default function Home() {
                             <div className="d-flex sm:justify-end">
                                 <div className="col-md-10">
                                     <p className="text-[25px] text-[#EA9A4A] font-[cd-m]">Question? Send us a message. Don&apos;t be shy</p>
-                                    <form>
+                                    <div>
                                         <div className="row" >
                                             <div className="col-md-12 mb-4">
                                                 <label htmlFor="name" className="text-[#C5C5C5]  text-[18px]">Name</label>
@@ -158,6 +199,8 @@ export default function Home() {
                                                         type="text"
                                                         id="email"
                                                         placeholder="Your Name"
+                                                        name="name"
+                                                        onChange={handleChangeEvent}
                                                         className="bg-[#272727] text-white  rounded-full px-4 py-2 focus:outline-none w-full"
                                                     />
                                                 </div>
@@ -166,9 +209,11 @@ export default function Home() {
                                                 <label htmlFor="name" className="text-[#C5C5C5]  text-[18px]">Email</label>
                                                 <div className="pt-2">
                                                     <input
-                                                        type="text"
-                                                        id="name"
-                                                        placeholder="Your Name"
+                                                        type="email"
+                                                        id="email"
+                                                        name="email"
+                                                        onChange={handleChangeEvent}
+                                                        placeholder="Enter your email"
                                                         className="bg-[#272727] text-white  rounded-full px-4 py-2 focus:outline-none w-full"
                                                     />
                                                 </div>
@@ -177,9 +222,11 @@ export default function Home() {
                                                 <label htmlFor="name" className="text-[#C5C5C5]  text-[18px]">Phone</label>
                                                 <div className="pt-2">
                                                     <input
-                                                        type="text"
-                                                        id="name"
+                                                      type="tel"
+                                                        id="phone"
                                                         placeholder="+91"
+                                                        name="phone"
+                                                        onChange={handleChangeEvent}
                                                         className="bg-[#272727] text-white  rounded-full px-4 py-2 focus:outline-none w-full"
                                                     />
                                                 </div>
@@ -190,6 +237,8 @@ export default function Home() {
                                                     <textarea
                                                         id="message"
                                                         placeholder="Your Message"
+                                                        name="message"
+                                                        onChange={handleChangeEvent}
                                                         rows={2}
                                                         className="bg-[#272727] text-white rounded-[50px] px-4 py-4 focus:outline-none w-full"
                                                     />
@@ -198,7 +247,7 @@ export default function Home() {
                                             </div>
                                             <div className="col-md-12 mb-4 pt-4">
                                                 <button
-                                                    type="submit"
+                                                    type="submit" onClick={() => { SubmitForm() }}
                                                     className="border border-white hover:border-[#EA9A4A] hover:bg-[#EA9A4A] text-white py-2 px-6 rounded-full w-full transition-all duration-300"
                                                 >
                                                     Submit
@@ -211,7 +260,7 @@ export default function Home() {
 
 
 
-                                    </form>
+                                    </div>
                                 </div>
 
                             </div>

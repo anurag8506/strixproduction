@@ -19,12 +19,13 @@ export default function Home() {
         <>
             <Header activePage="HomePage" />
 
-            <section className="bg-[#000] overflow-hidden sm:px-20 px-6  sm:pt-[100px] pt-[140px]">
+            <section className="bg-[#000] overflow-hidden sm:px-20 px-6  sm:pt-[100px] pt-[100px]">
                 <div className="container-fluid p-0" >
                     <section className="relative w-full  overflow-hidden">
-                        <div className="d-flex justify-center">
+                        <div className="d-flex justify-center pt-5">
+                            <div className="col-md-5 mb-4">
                             <video
-                                className="relative top-0 left-0 w-[650px] "
+                                className="relative   w-full  rounded-[100%]" 
                                 autoPlay
                                 loop
                                 muted
@@ -32,6 +33,8 @@ export default function Home() {
                                 <source src="/assets/videobannner.mp4" type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
+
+                            </div>
 
                         </div>
 
