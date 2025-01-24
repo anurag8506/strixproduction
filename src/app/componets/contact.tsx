@@ -11,7 +11,10 @@ export default function Home() {
         subject: "",
         message: "",
     });
+    const [loading, setLoading] = useState(false); // Loading state
+
     const SubmitForm = () => {
+        setLoading(true);
         const formData = new FormData();
         formData.append("email", retailer.email);
         formData.append("name", retailer.name);
@@ -25,14 +28,17 @@ export default function Home() {
             .then((response) => response.json())
             .then((data) => {
                 console.log(data);
-
+                setLoading(false); // Set loading to false once the response is received
                 if (data.status) {
                     toast.success(data.message);
                 } else {
                     toast.error(data.message);
                 }
             })
-            .catch((error) => console.error("Error:", error));
+            .catch((error) => {
+                setLoading(false); // Set loading to false if an error occurs
+                console.error("Error:", error);
+            });
     };
 
     const handleChangeEvent = (
@@ -141,11 +147,21 @@ export default function Home() {
 
                                 </div>
 
-                                <button onClick={() => { SubmitForm() }}
+                              
+                                
+                                <button
+                                    onClick={SubmitForm}
                                     type="submit"
-                                    className="w-full bg-[#000]  border border-[#fff] text-white py-2  font-semibold hover:bg-[#EA9A4A] hover:border hover:border-[#EA9A4A] transition font-[cd-m]"
+                                    className="w-full bg-[#000] border border-[#fff] text-white py-2 font-semibold hover:bg-[#EA9A4A] hover:border hover:border-[#EA9A4A] transition font-[cd-m]"
+                                    disabled={loading} // Disable the button while loading
                                 >
-                                    HIT US UP
+                                    {loading ? (
+                                        <div className="spinner-border text-light" role="status">
+                                            <span className="sr-only">Loading...</span>
+                                        </div>
+                                    ) : (
+                                        "HIT US UP"
+                                    )}
                                 </button>
                             </div>
                         </div>

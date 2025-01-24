@@ -10,7 +10,7 @@ import Link from "next/link";
 import AOS from 'aos';
 import { motion } from "framer-motion";
 import "aos/dist/aos.css";
-import { useEffect,useState } from "react";
+import { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css"
 import toast from "react-hot-toast";
 import { Toaster } from "react-hot-toast";
@@ -22,6 +22,7 @@ export default function Home() {
         AOS.init();
         AOS.refresh();
     }, []);
+    const [loading, setLoading] = useState(false);
     const [retailer, setRetailer] = useState({
         name: "",
         email: "",
@@ -29,6 +30,7 @@ export default function Home() {
         message: "",
     });
     const SubmitForm = () => {
+        setLoading(true);
         const formData = new FormData();
         formData.append("email", retailer.email);
         formData.append("name", retailer.name);
@@ -41,13 +43,18 @@ export default function Home() {
         })
             .then((response) => response.json())
             .then((data) => {
+                console.log(data);
+                setLoading(false); // Set loading to false once the response is received
                 if (data.status) {
                     toast.success(data.message);
                 } else {
                     toast.error(data.message);
                 }
             })
-            .catch((error) => console.error("Error:", error));
+            .catch((error) => {
+                setLoading(false); // Set loading to false if an error occurs
+                console.error("Error:", error);
+            });
     };
 
     const handleChangeEvent = (
@@ -61,7 +68,7 @@ export default function Home() {
     };
     return (
         <>
-           <Toaster position="top-center" reverseOrder={false}  />
+            <Toaster position="top-center" reverseOrder={false} />
 
             <Header activePage="ContactPage" />
             <section className="bg-[#000] overflow-hidden min-h-[100vh]">
@@ -222,7 +229,7 @@ export default function Home() {
                                                 <label htmlFor="name" className="text-[#C5C5C5]  text-[18px]">Phone</label>
                                                 <div className="pt-2">
                                                     <input
-                                                      type="tel"
+                                                        type="tel"
                                                         id="phone"
                                                         placeholder="+91"
                                                         name="phone"
@@ -248,9 +255,15 @@ export default function Home() {
                                             <div className="col-md-12 mb-4 pt-4">
                                                 <button
                                                     type="submit" onClick={() => { SubmitForm() }}
-                                                    className="border border-white hover:border-[#EA9A4A] hover:bg-[#EA9A4A] text-white py-2 px-6 rounded-full w-full transition-all duration-300"
+                                                    disabled={loading} className="border border-white hover:border-[#EA9A4A] hover:bg-[#EA9A4A] text-white py-2 px-6 rounded-full w-full transition-all duration-300"
                                                 >
-                                                    Submit
+                                                    {loading ? (
+                                                        <div className="spinner-border text-light" role="status">
+                                                            <span className="sr-only">Loading...</span>
+                                                        </div>
+                                                    ) : (
+                                                        "Submit"
+                                                    )}
                                                 </button>
 
 
