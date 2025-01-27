@@ -54,21 +54,20 @@ export default function Home() {
         <>
 
 <Toaster position="top-center" reverseOrder={false}  />
-            <section className="flex items-center justify-center bg-[#000] overflow-hidden sm:px-20 px-6 sm:py-[50px] py-[30px] sm:pt-[50px] pt-[20px]">
+            <section className="flex items-center justify-center bg-[#000] overflow-hidden sm:px-20 px-6 sm:py-[100px] pb-4 py-[30px] sm:pt-[50px] pt-[20px]">
                 <div className="container-fluid p-0">
 
-                    <div className="row align-items-end sm:pt-[40px] sm:pb-[40px]" data-aos="fade-up">
-                        <div className="col-md-6 mb-4" data-aos="fade-down"
-                            data-aos-easing="linear"
-                            data-aos-duration="1500">
+                    <div className="row align-items-end sm:pt-[40px] sm:pb-[40px]"  >
+                        <div className="col-md-6 mb-4" 
+                          >
                             <div className="col-md-10">
                                 <p className="sm:text-[45px] text-[30px] sm:leading-[45px] leading-[33px] font-[cd-se] text-[#fff] font-[cd-b] p-0 m-0 ">Get your<span className="text-[#EA9A4A]"> project</span>
                                     estimate for <span className="text-[#EA9A4A]">free</span></p>
 
                             </div>
                         </div>
-                        <div className="col-md-6 mb-4" data-aos="fade-up"
-                            data-aos-duration="3000">
+                        <div className="col-md-6 mb-4"
+                          >
 
 
                             <div className="space-y-6">
